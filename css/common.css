@@ -341,3 +341,31 @@ address {
     color: var(--Light-100);
 }
 /* footer end */
+
+/* top-btn */
+.top-btn {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.3rem;
+    bottom: 5rem;
+    right: 7.5rem;
+}
+
+.service {
+    display: block;
+    width: 7.4rem;
+    height: 7.4rem;
+    border-radius: 100%;
+    background: var(--main-color3) url(../img/as-icon.svg) no-repeat center/40%;
+}
+
+.top {
+    display: block;
+    width: 7.4rem;
+    height: 7.4rem;
+    border-radius: 100%;
+    background: var(--main-color) url(../img/top-icon.svg) no-repeat center/30%;
+}
+/* top-btn end */

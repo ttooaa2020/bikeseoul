@@ -305,19 +305,37 @@
 
 .safety-guide .button-prev {
     position: absolute;
-    width: 3rem;
-    height: 3rem;
-    background: url(../img/l-arrow-icon.svg) no-repeat center / 50%;
+    width: 8rem;
+    height: 8rem;
+    background: url(../img/l-arrow-icon.svg) no-repeat center / 30%;
     top: 54rem;
-    left: 11rem;
+    left: 7rem;
+
+    border-radius: 100%;
+    transition: 0.2s;
 }
 .safety-guide .button-next {
     position: absolute;
-    width: 3rem;
-    height: 3rem;
-    background: url(../img/r-arrow-icon.svg) no-repeat center / 50%;
+    width: 8rem;
+    height: 8rem;
+    background: url(../img/r-arrow-icon.svg) no-repeat center / 30%;
     top: 54rem;
-    right: 11rem;
+    right: 7rem;
+
+    border-radius: 100%;
+    transition: 0.2s;
+}
+
+.safety-guide .button-prev:hover {
+    width: 8rem;
+    height: 8rem;
+    background-color: var(--main-color3);
+}
+.safety-guide .button-next:hover {
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    background-color: var(--main-color3);
 }
 
 .safety-guide h3 {
@@ -450,14 +468,16 @@
     top: -50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: none;
 
     opacity: 0;
-    transition: 0.8s;
+    transition: 1s;
     pointer-events: none;
     user-select: none;
 }
 
 .video-wrap.active {
+    display: flex;
     top: 50%;
     opacity: 1;
     pointer-events: initial;
@@ -465,7 +485,7 @@
 }
 
 .video {
-    width: 1024px;
+    width: 102.4rem;
     aspect-ratio: 16/9;
 }
 
@@ -473,6 +493,17 @@
     width: 100%;
     height: 100%;
     border: none;
+}
+
+.btn-close {
+    position: absolute;
+    top: -0.8rem;
+    right: -7rem;
+    width: 7rem;
+    height: 7rem;
+    border: none;
+    background: url(../img/close-icon.svg) no-repeat center/50%;
+    cursor: pointer;
 }
 /* youtube end */
 
@@ -490,7 +521,3 @@
         left: -100%;
     }
 }
-
-/* 
-2.안전 규칙 슬라이드 버튼 호버 할떄 배경을 주거나 아이콘 크게 만들고 커서 포인트 만들기
-3.팝업 영상에 버튼 추가 하기 */
