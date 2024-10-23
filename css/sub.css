@@ -7,9 +7,31 @@ h3 {
     text-align: center;
 }
 
+@keyframes visual {
+    0% {
+        clip-path: inset(20% 20%);
+    }
+    100% {
+        clip-path: inset(0);
+    }
+}
+
+@keyframes figure-img {
+    0% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 /* visual */
 .visual {
     position: relative;
+    height: 60rem;
+    overflow: hidden;
+    animation: visual 0.7s ease-out forwards;
 }
 
 .visual-text {
@@ -21,6 +43,8 @@ h3 {
 
     color: var(--Light-100);
     text-align: center;
+
+    z-index: 1;
 }
 
 .visual-text h2 {
@@ -33,19 +57,15 @@ h3 {
     font-weight: 400;
 }
 
-.visual figure {
-    height: 67.3rem;
-}
-
 .visual figure img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    animation: figure-img 1s ease-out forwards;
 }
 /* visual end */
 
 /* type */
-
 .type {
     padding-top: 14.7rem;
 }
@@ -97,6 +117,7 @@ h3 {
     text-align: center;
 
     color: var(--Light-100);
+    transition: 0.4s;
 }
 
 .type-text strong {
@@ -114,15 +135,19 @@ h3 {
     padding-top: 2.3rem;
 
     opacity: 0;
-    max-height: 0;
+
     overflow: hidden;
-    transition: opacity 0.3s;
-    transition: 0.4s;
+}
+
+.type-list li:hover .type-text {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .type-list li:hover .type-text p {
+    transition: 0.2s 0.2s;
     opacity: 1;
-    max-height: 18rem;
 }
 
 .type-list li:hover::before {
@@ -264,7 +289,6 @@ h3 {
 .text-wrap p {
     padding-top: 4.2rem;
 }
-
 /* lcd */
 
 .lend-list-lcd li:nth-child(1) {
@@ -410,10 +434,11 @@ h3 {
 
 .question-list strong::after {
     content: "";
-    display: block;
+    display: flex;
     width: 4.2rem;
     height: 4.2rem;
     background: url(../img/question-arrow.svg) no-repeat 50% / contain;
+    transition: 0.4s;
 }
 
 .answer-wrap {
@@ -430,7 +455,7 @@ h3 {
     padding-top: 4.5rem;
 }
 
-.answer-wrap ul > li.on > strong::after {
-    transform: translateY(-50%) rotate(315deg); /* trftY */
+.question-list li.on > strong::after {
+    transform: rotate(180deg); /* trftY */
 }
 /* question  end*/
