@@ -7,9 +7,10 @@ $(function () {
 
     AOS.init({
         duration: 500,
+        offset: 120, // 기본값은 120
     });
 
-    // 헤더에 마우스 오버시 언어 메뉴 표시
+    // 헤더에 마우스 오버시 언어 메뉴 표시------------------------------------------------------------
     $menu.on("mouseenter", function () {
         $(this).addClass("on");
         $header.addClass("active");
@@ -25,9 +26,9 @@ $(function () {
     $window.on("wheel", function (e) {
         e.originalEvent.wheelDelta > 0 ? $header.removeClass("hide") : $header.addClass("hide");
     });
-    // 헤더에 마우스 오버시 언어 메뉴 표시
+    // 헤더에 마우스 오버시 언어 메뉴 표시----------------------------------------------------------------
 
-    // 헤더, 탑버튼이 비주얼을 벗어 나갈때
+    // 헤더, 탑버튼이 비주얼을 벗어 나갈때----------------------------------------------------------
     const $visual = $(".visual");
     const $topBtn = $(".top-btn");
 
@@ -45,64 +46,74 @@ $(function () {
     $topBtn.on("click", function () {
         $("html, body").animate({ scrollTop: 0 }, 100);
     });
-    // 헤더, 탑버튼이 비주얼을 벗어 나갈때
+    // 헤더, 탑버튼이 비주얼을 벗어 나갈때------------------------------------------------------------
 
-    // phone-con
-    const swiper = new Swiper(".phone-con", {
-        // Optional parameters
-        initialSlide: 0,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        speed: 300,
-        effect: "fade",
-        allowTouchMove: false,
-        on: {
-            init: function () {
-                updateCardText(this.realIndex);
+    // phone-con------------------------------------------------------------
+    const swiperContainer = document.querySelector(".phone-con");
+    // 스와이퍼
+    if (swiperContainer) {
+        const swiper = new Swiper(".phone-con", {
+            // Optional parameters
+            initialSlide: 0,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
             },
-            slideChange: function () {
-                updateCardText(this.realIndex);
+            speed: 300,
+            effect: "fade",
+            allowTouchMove: false,
+            on: {
+                init: function () {
+                    updateCardText(this.realIndex);
+                },
+                slideChange: function () {
+                    updateCardText(this.realIndex);
+                },
             },
-        },
-    });
+        });
+        // 스와이퍼 end
 
-    // Intersection Observer 설정
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    swiper.autoplay.start();
+        // Intersection Observer 설정 (보일때 작동)
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        swiper.autoplay.start();
+                    } else {
+                        swiper.autoplay.stop();
+                    }
+                });
+            },
+            { threshold: 0.5 }
+        ); // 50% 이상 보일 때 감지
+
+        // Swiper 컨테이너 관찰 시작 (폰과 텍스트 연동)
+        observer.observe(swiperContainer);
+        function updateCardText(index) {
+            const cardTexts = document.querySelectorAll(".text-con");
+            cardTexts.forEach((cardText, i) => {
+                if (i === index) {
+                    cardText.classList.add("on");
                 } else {
-                    swiper.autoplay.stop();
+                    cardText.classList.remove("on");
                 }
             });
-        },
-        { threshold: 0.5 }
-    ); // 50% 이상 보일 때 감지
+        }
 
-    // Swiper 컨테이너 관찰 시작
-
-    function updateCardText(index) {
-        const cardTexts = document.querySelectorAll(".text-con");
-        cardTexts.forEach((cardText, i) => {
-            if (i === index) {
-                cardText.classList.add("on");
-            } else {
-                cardText.classList.remove("on");
-            }
+        // 페이지 로드 시 첫 번째 요소 활성화
+        document.addEventListener("DOMContentLoaded", () => {
+            updateCardText(0);
         });
     }
-    // phone-con end
+    // phone-con end------------------------------------------------------------
 
-    // safety-guide
+    // safety-guide------------------------------------------------------------
     const SafetyGuide = new Swiper(".safety", {
         speed: 500,
         loop: true,
         slidesPerView: 4,
-        slidesPerGroup: 1, // 한 번에 4개의 슬라이드를 그룹으로 이동
-        spaceBetween: 146, // 간격 20px
+        slidesPerGroup: 1, // 한 번에 n개의 슬라이드를 그룹으로 이동
+        spaceBetween: 146, // 간격
 
         pagination: {
             el: ".swiper-pagination",
@@ -115,9 +126,9 @@ $(function () {
             prevEl: ".button-prev",
         },
     });
-    // safety-guide end
+    // safety-guide end------------------------------------------------------------
 
-    // youtube
+    // youtube------------------------------------------------------------
     const $dim = $(".dim");
     const $videoWrap = $(".video-wrap");
     const $video = $videoWrap.find(".video iframe");
@@ -152,9 +163,9 @@ $(function () {
         $video.attr("src", "");
     });
 
-    // youtube end
+    // youtube end------------------------------------------------------------
 
-    // 이용 방법
+    // 이용 방법------------------------------------------------------------
     // lcd
     $(function () {
         const $lendListLcd = $(".lend-list-lcd");
@@ -226,9 +237,9 @@ $(function () {
         $tabCon.hide();
         $tabCon.eq(index).show();
     }
-    // 이용 방법
+    // 이용 방법 end------------------------------------------------------------
 
-    // question
+    // question------------------------------------------------------------
     const $question = $(".question-list > li");
     const $answer = $(".answer-wrap");
     const $questionList = $(".question-list");
@@ -255,5 +266,6 @@ $(function () {
             $answer.stop().slideUp(duration);
         }
     });
-    // question
+
+    // question end------------------------------------------------------------
 });
