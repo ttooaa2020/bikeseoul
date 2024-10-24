@@ -465,3 +465,10 @@ address {
     border-radius: 50%;
 }
 /* top-btn end */
+
+@media (max-width: 1024px) {
+    .sns li a {
+        justify-content: space-between;
+        width: 22.1rem;
+    }
+}
