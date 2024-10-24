@@ -63,6 +63,8 @@ img {
 .inner {
     width: 152rem;
     margin: 0 auto;
+
+    width: 79.167vw;
 }
 
 /* header */
@@ -81,6 +83,8 @@ img {
     align-items: center;
     justify-content: space-between;
     padding: 6.5rem 0;
+
+    padding: 3.385vw 0;
 }
 
 header {
@@ -97,6 +101,8 @@ header.scrolled .language-list li a {
     text-align: center;
     background: var(--main-color3);
     font-weight: 500;
+
+    padding: 1.042vw;
 }
 
 header.hide {
@@ -107,7 +113,10 @@ header.hide {
     width: 22rem;
     height: 5rem;
     display: block;
-    background: url(../img/main-log.svg) no-repeat center/100%;
+    background: url(../img/main-log.svg) no-repeat 100% / contain;
+
+    width: 11.458vw;
+    height: 2.604vw;
 }
 
 .nav-con {
@@ -127,6 +136,9 @@ header.hide {
     font-weight: 800;
 
     color: var(--Light-100);
+
+    padding: 0 1.615vw;
+    font-size: calc(1.6rem, 1.042vw, 2rem);
 }
 
 .language {
@@ -137,6 +149,8 @@ header.hide {
     padding: 0 5.1rem 0 2.9rem;
 
     color: var(--Light-100);
+
+    padding: 0 2.656vw 0 1.51vw;
 }
 
 .language-list {
@@ -149,6 +163,9 @@ header.hide {
 
     display: none;
     padding-top: 4rem;
+
+    font-size: clamp(1.4rem, 0.885vw, 1.7rem);
+    padding-top: 2.083vw;
 }
 
 .language-list li a {
@@ -157,6 +174,8 @@ header.hide {
     text-align: center;
     /* background: var(--main-color3); */
     font-weight: 500;
+
+    padding: 0.781vw;
 }
 
 .language strong {
@@ -167,6 +186,9 @@ header.hide {
     font-weight: 700;
 
     gap: 1.1rem;
+
+    font-size: clamp(1.6rem, 1.042vw, 2rem);
+    gap: 0.573vw;
 }
 
 .language strong::after {
@@ -174,7 +196,10 @@ header.hide {
     display: block;
     width: 1.5rem;
     height: 1.5rem;
-    background: url(../img/w-arrow-icon.svg) no-repeat center/100%;
+    background: url(../img/w-arrow-icon.svg) no-repeat 100% / contain;
+
+    width: 0.781vw;
+    height: 0.781vw;
 }
 
 .language strong::before {
@@ -182,7 +207,10 @@ header.hide {
     display: block;
     width: 1.5rem;
     height: 1.5rem;
-    background: url(../img/language-icon.svg) no-repeat center/100%;
+    background: url(../img/language-icon.svg) no-repeat 100% / contain;
+
+    width: 0.781vw;
+    height: 0.781vw;
 }
 
 .language strong:hover::after {
@@ -190,7 +218,10 @@ header.hide {
     display: block;
     width: 1.5rem;
     height: 1.5rem;
-    background: url(../img/w-arrow-icon-hover.svg) no-repeat center/100%;
+    background: url(../img/w-arrow-icon-hover.svg) no-repeat 100% / contain;
+
+    width: 0.781vw;
+    height: 0.781vw;
 }
 
 .language strong:hover::before {
@@ -198,39 +229,56 @@ header.hide {
     display: block;
     width: 1.5rem;
     height: 1.5rem;
-    background: url(../img/language-icon-hover.svg) no-repeat center/100%;
+    background: url(../img/language-icon-hover.svg) no-repeat 100% / contain;
+
+    width: 0.781vw;
+    height: 0.781vw;
 }
 
 .join-btn {
     display: flex;
     align-items: center;
     gap: 4rem;
+
+    gap: 2.083vw;
 }
 
 .join-btn a:nth-child(1) {
     display: block;
     width: 3rem;
     height: 3.5rem;
-    background: url(../img/login-icon.svg) no-repeat center/100%;
+    background: url(../img/login-icon.svg) no-repeat 100% / contain;
+
+    width: 1.563vw;
+    height: 1.823vw;
 }
 .join-btn a:nth-child(2) {
     display: block;
     width: 4.1rem;
     height: 3.6rem;
-    background: url(../img/join-icon.svg) no-repeat center/100%;
+    background: url(../img/join-icon.svg) no-repeat 100% / contain;
+
+    width: 2.146vw;
+    height: 1.875vw;
 }
 
 .join-btn a:hover:nth-child(1) {
     display: block;
     width: 3rem;
     height: 3.5rem;
-    background: url(../img/login-icon-hover.svg) no-repeat center/100%;
+    background: url(../img/login-icon-hover.svg) no-repeat 100% / contain;
+
+    width: 1.563vw;
+    height: 1.823vw;
 }
 .join-btn a:hover:nth-child(2) {
     display: block;
     width: 4.1rem;
     height: 3.6rem;
-    background: url(../img/join-icon-hover.svg) no-repeat center/100%;
+    background: url(../img/join-icon-hover.svg) no-repeat 100% / contain;
+
+    width: 2.146vw;
+    height: 1.875vw;
 }
 /* header end */
 
@@ -238,6 +286,8 @@ header.hide {
 #footer {
     padding: 11.9rem 0 11.6rem;
     background: var(--main-color3);
+
+    padding: 6.198vw 0 6.042vw;
 }
 
 .sns {
@@ -255,10 +305,16 @@ header.hide {
     font-size: 2rem;
     font-weight: 700;
     border-radius: 2rem;
+
+    padding: 1.563vw 2.083vw;
+    font-size: clamp(1.2rem, 1.042vw, 2rem);
+    border-radius: 1.042vw;
 }
 
 .sns li a i {
     padding: 0 0.7rem 0 11.3rem;
+
+    padding: 0 0.438vw 0 6.948vw;
 }
 
 .sns li a::before {
@@ -267,6 +323,9 @@ header.hide {
     width: 5rem;
     height: 5rem;
     border-radius: 100%;
+
+    width: 2.604vw;
+    height: 2.604vw;
 }
 
 .sns li a:nth-child(1)::before {
@@ -289,12 +348,17 @@ header.hide {
     height: 1.3rem;
     padding-left: 1rem;
     background: url(../img/arrow-sns.svg) no-repeat center/50%;
+
+    width: 0.313vw;
+    height: 0.688vw;
 }
 
 .footer-con {
     display: flex;
     justify-content: space-between;
     padding-top: 9.7rem;
+
+    padding-top: 5.052vw;
 }
 
 .foot-logo a {
@@ -302,12 +366,17 @@ header.hide {
     width: 23.8rem;
     height: 5.1rem;
 
-    background: url(../img/main-log.svg) no-repeat center/100%;
+    background: url(../img/main-log.svg) no-repeat 100% / contain;
+
+    width: 12.344vw;
+    height: 2.656vw;
 }
 
 .foot-nav {
     display: flex;
     margin-left: -4rem;
+
+    margin-left: -2.083vw;
 }
 
 .foot-nav li {
@@ -317,6 +386,9 @@ header.hide {
     font-size: 2rem;
     font-weight: 700;
     color: var(--Light-100);
+
+    padding: 0 2.083vw;
+    font-size: clamp(1rem, 1.042vw, 2rem);
 }
 
 .foot-nav li::after {
@@ -328,6 +400,14 @@ header.hide {
     width: 1px;
     height: 10px;
     background: rgba(187, 187, 187, 0.3);
+
+    width: 0.052vw;
+    height: 0.521vw;
+}
+
+.foot-nav li:nth-child(5)::after {
+    content: "";
+    display: none;
 }
 
 address {
@@ -339,6 +419,9 @@ address {
     font-size: 1.8rem;
     font-weight: 400;
     color: var(--Light-100);
+
+    padding-top: 2.5vw;
+    font-size: clamp(0.9rem, 0.885vw, 1.8rem);
 }
 /* footer end */
 
@@ -351,6 +434,10 @@ address {
     gap: 1.3rem;
     bottom: 5rem;
     right: 7.5rem;
+
+    gap: 0.688vw;
+    bottom: 2.583vw;
+    right: 3.854vw;
 }
 
 .service {
@@ -359,6 +446,11 @@ address {
     height: 7.4rem;
     border-radius: 100%;
     background: var(--main-color3) url(../img/as-icon.svg) no-repeat center/40%;
+    border: 1px solid #ccc;
+
+    width: 3.854vw;
+    height: 3.854vw;
+    border-radius: 50%;
 }
 
 .top {
@@ -367,5 +459,9 @@ address {
     height: 7.4rem;
     border-radius: 100%;
     background: var(--main-color) url(../img/top-icon.svg) no-repeat center/30%;
+
+    width: 3.854vw;
+    height: 3.854vw;
+    border-radius: 50%;
 }
 /* top-btn end */
