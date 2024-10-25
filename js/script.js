@@ -62,6 +62,11 @@ $(function () {
             speed: 300,
             effect: "fade",
             allowTouchMove: false,
+            // Pagination 추가
+            pagination: {
+                el: ".phone-pagination",
+                clickable: true,
+            },
             on: {
                 init: function () {
                     updateCardText(this.realIndex);
@@ -105,18 +110,33 @@ $(function () {
             updateCardText(0);
         });
     }
+
     // phone-con end------------------------------------------------------------
 
     // safety-guide------------------------------------------------------------
     const SafetyGuide = new Swiper(".safety", {
         speed: 500,
         loop: true,
-        slidesPerView: 4,
         slidesPerGroup: 1, // 한 번에 n개의 슬라이드를 그룹으로 이동
-        spaceBetween: 146, // 간격
+
+        breakpoints: {
+            100: {
+                slidesPerView: 1,
+            },
+
+            601: {
+                slidesPerView: 3,
+                spaceBetween: 76,
+            },
+
+            1501: {
+                slidesPerView: 4,
+                spaceBetween: 146,
+            },
+        },
 
         pagination: {
-            el: ".swiper-pagination",
+            el: ".safety-pagination",
             clickable: true,
         },
 
@@ -126,6 +146,7 @@ $(function () {
             prevEl: ".button-prev",
         },
     });
+
     // safety-guide end------------------------------------------------------------
 
     // youtube------------------------------------------------------------

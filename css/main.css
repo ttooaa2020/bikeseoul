@@ -265,6 +265,10 @@
 .text-con.on {
     color: var(--Darck-100);
 }
+
+.phone-pagination {
+    display: none;
+}
 /* phone end */
 
 /* usage-guide */
@@ -281,7 +285,7 @@
     color: var(--Light-100);
 
     padding-top: 6.51vw;
-    font-size: clamp(2.5rem, 2.083vw, 4rem);
+    font-size: clamp(2rem, 2.083vw, 4rem);
 }
 
 .guide-cards {
@@ -346,7 +350,7 @@
     font-size: 4rem;
     font-weight: 800;
 
-    font-size: clamp(2.5rem, 2.083vw, 4rem);
+    font-size: clamp(2rem, 2.083vw, 4rem);
 }
 
 .guide-cards dl dd {
@@ -406,15 +410,15 @@
     width: 8rem;
     height: 8rem;
     background: url(../img/l-arrow-icon.svg) no-repeat center / 30%;
-    top: 54rem;
+    top: 50%;
     left: 7rem;
 
     border-radius: 100%;
     transition: 0.2s;
+    z-index: 2;
 
     width: 4.271vw;
     height: 4.271vw;
-    top: 28.125vw;
     left: 3.646vw;
 }
 .safety-guide .button-next {
@@ -422,15 +426,15 @@
     width: 8rem;
     height: 8rem;
     background: url(../img/r-arrow-icon.svg) no-repeat center / 30%;
-    top: 54rem;
+    top: 50%;
     right: 7rem;
 
     border-radius: 100%;
     transition: 0.2s;
+    z-index: 2;
 
     width: 4.271vw;
     height: 4.271vw;
-    top: 28.125vw;
     right: 3.646vw;
 }
 
@@ -438,6 +442,7 @@
     width: 8rem;
     height: 8rem;
     background-color: var(--main-color3);
+    z-index: 2;
 
     width: 4.271vw;
     height: 4.271vw;
@@ -447,6 +452,7 @@
     width: 8rem;
     height: 8rem;
     background-color: var(--main-color3);
+    z-index: 2;
 
     width: 4.271vw;
     height: 4.271vw;
@@ -459,7 +465,7 @@
 
     text-align: center;
 
-    font-size: clamp(2.5rem, 2.083vw, 4rem);
+    font-size: clamp(2rem, 2.083vw, 4rem);
 }
 
 .safety-con {
@@ -489,7 +495,7 @@
     font-size: 3rem;
     font-weight: 700;
 
-    font-size: clamp(2.5rem, 1.25vw, 3rem);
+    font-size: clamp(1.8rem, 1.25vw, 3rem);
     padding-top: 0.781vw;
 }
 
@@ -607,6 +613,7 @@
     right: 0;
     bottom: 0;
     background: rgb(0, 0, 0, 0.7);
+    z-index: 2;
 
     display: none;
 }
@@ -630,6 +637,8 @@
     opacity: 1;
     pointer-events: initial;
     user-select: initial;
+
+    z-index: 2;
 }
 
 .video {
@@ -677,43 +686,55 @@
     }
 }
 
-@media (max-width: 1700px) {
-    .inner {
-        width: 90%;
-    }
-}
-
 @media (max-width: 1024px) {
-    .inner {
-        width: 90%;
-        width: 92.6rem;
-    }
-
-    .gnb {
-        display: none;
-    }
-
     .about-con figure {
         width: 42.4rem;
         height: 28.6rem;
+
+        width: 41.41vw;
+        height: 27.93vw;
     }
 
     .phone-all {
         width: 64.3rem;
+
+        width: 62.79vw;
     }
 
     .phone-con {
         width: 30.5rem;
         height: 57.6rem;
+
+        width: 29.79vw;
+        height: 56.25vw;
+    }
+
+    .usage-guide h3 {
+        padding-top: 8.1rem;
+        padding-top: 9vw;
+    }
+
+    .guide-cards {
+        display: flex;
+        padding: 4rem 0 7.3rem;
+        overflow-x: auto;
+        scrollbar-width: none;
+        min-width: 36rem;
+        gap: 2rem;
     }
 
     .guide-cards li a {
         width: 29.1rem;
         height: 18.6rem;
+        padding: 2.2rem 2.7rem;
+        border-radius: 1.8rem;
+        flex: 0 0 auto;
     }
 
     .guide-cards li a::after {
-        margin-top: 10rem;
+        margin-top: 9.5rem;
+        width: 5.1rem;
+        height: 5.1rem;
     }
 
     .safety-guide {
@@ -723,6 +744,9 @@
     .safety-guide .swiper-slide figure {
         width: 12.9rem;
         height: 12.8rem;
+
+        width: 12.6vw;
+        height: 12.5vw;
     }
 
     .safety-guide .swiper-slide dt {
@@ -732,22 +756,146 @@
         font-size: 1.3rem;
     }
 
-    .safety-guide .swiper-pagination {
-        bottom: 6.5rem;
-    }
-
-    .safety-guide .button-next {
-        right: 2rem;
-    }
-
-    .safety-guide .button-prev {
-        left: 2rem;
-    }
-
     .youtube figure {
         width: 54.5rem;
         height: 31.4rem;
+
+        width: 53.22vw;
+        height: 30.66vw;
     }
 }
-@media (max-width: 430px) {
+
+@media (max-width: 800px) {
+    .inner {
+        width: 50rem;
+
+        width: 90.6977vw;
+    }
+
+    .about {
+    }
+
+    .about li {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 2.2rem;
+    }
+
+    .about li:nth-child(2),
+    .about li:nth-child(4) {
+        flex-direction: column;
+    }
+
+    .about-con figure {
+        width: 100%;
+        height: 26.3rem;
+    }
+
+    .phone-all {
+        flex-direction: column;
+        height: 52.7rem;
+    }
+
+    .phone-con {
+        position: relative;
+        width: 19.2rem;
+        height: 42.2rem;
+    }
+
+    .text-con {
+        display: none;
+        text-align: center;
+    }
+
+    .text-con.on {
+        display: block;
+    }
+
+    .phone-pagination {
+        display: block;
+        position: absolute;
+        bottom: 0rem !important;
+    }
+
+    .swiper-pagination-bullet {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+    .safety-guide .swiper-pagination {
+        bottom: 8rem;
+    }
+
+    .youtube-all {
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .youtube figure {
+        width: 100%;
+        height: 22.4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .inner {
+        width: 39rem;
+
+        width: 90.6977vw;
+    }
+
+    .visual {
+        height: 95.4rem;
+    }
+
+    .app-btn {
+        gap: 2.6rem;
+    }
+
+    .app-btn a {
+        padding: 1.2rem 3.6rem;
+        padding: 2.79vw 8.37vw;
+    }
+
+    .app-btn a:nth-child(1)::after,
+    .app-btn a:nth-child(2)::after {
+        width: 10.7rem;
+        height: 2.5rem;
+
+        width: 24.88vw;
+        height: 5.81vw;
+    }
+
+    .usage-guide h3 {
+        padding-top: 6.1rem;
+    }
+
+    .safety-guide .swiper-slide figure {
+        width: 19rem;
+        height: 19rem;
+    }
+
+    .swiper-slide dl dd {
+        padding-top: 1.3rem;
+    }
+
+    .safety-guide .button-next,
+    .safety-guide .button-prev {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    .safety-guide .button-next:hover,
+    .safety-guide .button-prev:hover {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .video-list {
+        gap: 0.8rem;
+    }
+
+    .video-list li {
+        padding: 1rem 2.5rem;
+    }
 }
