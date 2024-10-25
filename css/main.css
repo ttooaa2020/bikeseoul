@@ -23,7 +23,8 @@
     width: 152rem;
     margin: 0 auto;
 
-    width: 79.167vw;
+    /* width: 79.167vw; */
+    width: 79.167%;
 }
 
 .visual {
@@ -825,11 +826,11 @@
         width: 53.22vw;
         height: 30.66vw;
     }
-
+    /* 
     .sns li a {
         justify-content: space-between;
         width: 22.1rem;
-    }
+    } */
 }
 
 /* --------------------------------------------------------------------------------------------------------- */
@@ -901,6 +902,10 @@
         width: 100%;
         height: 22.4rem;
     }
+
+    /* .sns {
+        flex-wrap: wrap;
+    } */
 }
 
 @media (max-width: 600px) {

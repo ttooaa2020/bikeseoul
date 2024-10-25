@@ -285,7 +285,11 @@ header.hide {
 
 .sns {
     display: flex;
-    justify-content: space-between;
+    gap: 2rem;
+}
+
+.sns li {
+    flex: 1 1 max(22%, 185px);
 }
 
 .sns li a {
@@ -299,15 +303,8 @@ header.hide {
     font-weight: 700;
     border-radius: 2rem;
 
-    padding: 1.563vw 2.083vw;
+    /* padding: 1.563vw 2.083vw; */
     font-size: clamp(1.2rem, 1.042vw, 2rem);
-    border-radius: 1.042vw;
-}
-
-.sns li a i {
-    padding: 0 0.7rem 0 11.3rem;
-
-    padding: 0 0.438vw 0 6.948vw;
 }
 
 .sns li a::before {
@@ -316,9 +313,6 @@ header.hide {
     width: 5rem;
     height: 5rem;
     border-radius: 100%;
-
-    width: 2.604vw;
-    height: 2.604vw;
 }
 
 .sns li a:nth-child(1)::before {
@@ -341,9 +335,6 @@ header.hide {
     height: 1.3rem;
     padding-left: 1rem;
     background: url(../img/arrow-sns.svg) no-repeat center/50%;
-
-    width: 0.313vw;
-    height: 0.688vw;
 }
 
 .footer-con {
