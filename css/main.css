@@ -19,6 +19,13 @@
     }
 }
 
+.inner {
+    width: 152rem;
+    margin: 0 auto;
+
+    width: 79.167vw;
+}
+
 .visual {
     position: relative;
     width: 100%;
@@ -686,7 +693,62 @@
     }
 }
 
+@media (max-width: 1520px) {
+    .inner {
+        width: 85%;
+    }
+
+    .gnb li {
+        font-weight: 600;
+    }
+}
+/* --------------------------------------------------------------------------------------------------------- */
+
 @media (max-width: 1024px) {
+    .inner {
+        width: 92.6rem;
+
+        width: 90.43%;
+    }
+    #header nav {
+        padding: 5rem 0;
+    }
+
+    .gnb {
+        display: none;
+    }
+
+    .nav-con {
+        display: flex;
+        gap: 4rem;
+    }
+
+    .language strong::after {
+        width: 1rem;
+        height: 1rem;
+    }
+    .language strong::before {
+        width: 1.5rem;
+        height: 1.7rem;
+    }
+    .language strong::after:hover {
+        width: 1rem;
+        height: 1rem;
+    }
+    .language strong::before:hover {
+        width: 1.5rem;
+        height: 1.7rem;
+    }
+
+    .more-btn a {
+        display: block;
+        width: 3.2rem;
+        height: 0.7rem;
+
+        background: url(../img/moer-icon.svg) no-repeat 50% / contain;
+    }
+    /* 헤더 끝 */
+
     .about-con figure {
         width: 42.4rem;
         height: 28.6rem;
@@ -763,16 +825,19 @@
         width: 53.22vw;
         height: 30.66vw;
     }
+
+    .sns li a {
+        justify-content: space-between;
+        width: 22.1rem;
+    }
 }
 
+/* --------------------------------------------------------------------------------------------------------- */
 @media (max-width: 800px) {
     .inner {
         width: 50rem;
 
         width: 90.6977vw;
-    }
-
-    .about {
     }
 
     .about li {
@@ -843,6 +908,18 @@
         width: 39rem;
 
         width: 90.6977vw;
+    }
+
+    .logo a {
+        width: 15.7rem;
+        height: 3.5rem;
+    }
+    .join-btn {
+        display: none;
+    }
+
+    .language {
+        display: none;
     }
 
     .visual {
