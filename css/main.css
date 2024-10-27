@@ -70,6 +70,8 @@
     font-size: 7.5rem;
     font-weight: 700;
     color: var(--Light-100);
+
+    font-size: clamp(4rem, 3.9062vw, 7.5rem);
 }
 
 .app-btn {
@@ -77,6 +79,8 @@
     justify-content: center;
     padding-top: 7.4rem;
     gap: 3.5rem;
+
+    padding-top: 8.1229%;
 }
 
 .app-btn a {
@@ -132,7 +136,7 @@
     font-weight: 700;
 
     padding-top: 4.4313%;
-    font-size: clamp(2.2rem, 2.0833vw, 4rem);
+    font-size: clamp(2.2rem, 0.0208vw, 4rem);
 }
 
 .about-con dl dd {
@@ -235,14 +239,14 @@
     font-weight: 900;
     font-size: 4rem;
 
-    font-size: clamp(2.5rem, 2.0833vw, 4rem);
+    font-size: clamp(2.5rem, 0.02083vw, 4rem);
 }
 
 .text-con dd {
     font-weight: 500;
     font-size: 1.8rem;
 
-    font-size: clamp(1.5rem, 1.4063vw, 1.8rem);
+    font-size: clamp(1.5rem, 0.9375vw, 1.8rem);
 }
 
 .text-con.on {
@@ -268,7 +272,7 @@
     color: var(--Light-100);
 
     padding-top: 8.2237%;
-    font-size: clamp(2.5rem, 21.0526vw, 4rem);
+    font-size: clamp(2.5rem, 0.02083vw, 4rem);
 }
 
 .guide-cards {
@@ -304,6 +308,7 @@
     margin-top: 15rem;
 
     margin-top: 38.5263%;
+    width: 17.7083%;
 }
 
 .guide-cards li:nth-child(1) a::after {
@@ -330,7 +335,7 @@
     font-size: 4rem;
     font-weight: 800;
 
-    font-size: clamp(2.5rem, 21.0526vw, 4rem);
+    font-size: clamp(2.5rem, 2.0833vw, 4rem);
 }
 
 .guide-cards dl dd {
@@ -340,7 +345,7 @@
     padding-top: 1.5rem;
 
     padding-top: 7.0833%;
-    font-size: clamp(1.6rem, 1.4063vw, 2.4rem);
+    font-size: clamp(1.6rem, 1.25vw, 2.4rem);
 }
 
 .guide-cards li a:hover {
@@ -389,8 +394,6 @@
     border-radius: 100%;
     transition: 0.2s;
     z-index: 2;
-
-    width: 4%;
 }
 
 .safety-guide .button-next {
@@ -404,8 +407,6 @@
     border-radius: 100%;
     transition: 0.2s;
     z-index: 2;
-
-    width: 4%;
 }
 
 .safety-guide .button-prev:hover {
@@ -413,8 +414,6 @@
     height: 8rem;
     background-color: var(--main-color3);
     z-index: 2;
-
-    width: 4%;
 }
 .safety-guide .button-next:hover {
     position: absolute;
@@ -422,8 +421,6 @@
     height: 8rem;
     background-color: var(--main-color3);
     z-index: 2;
-
-    width: 4%;
 }
 
 .safety-guide h3 {
@@ -432,7 +429,7 @@
     color: var(--main-color3);
     text-align: center;
 
-    font-size: clamp(2.5rem, 21.0526vw, 4rem);
+    font-size: clamp(2.5rem, 2.0833vw, 4rem);
 }
 
 .safety-con {
@@ -642,14 +639,13 @@
 /* --------------------------------------------------------------------------------------------------------- */
 
 @media (max-width: 1500px) {
-    .phone-all {
-        /* width: 64.3rem;
-        height: 57.6rem; */
-    }
-
     .safety-guide .swiper-slide figure {
         width: 12.9rem;
         height: 12.8rem;
+    }
+
+    .video {
+        width: 65rem;
     }
 }
 
@@ -665,6 +661,17 @@
 
     .youtube figure {
         height: 31.4rem;
+    }
+
+    .guide-cards li a {
+        width: 29.1rem;
+        height: 18.6rem;
+
+        padding: 2.2rem 2.1rem;
+    }
+
+    .guide-cards li a::after {
+        margin-top: 7rem;
     }
 }
 
@@ -737,7 +744,7 @@
     }
 
     .safety-guide .swiper-pagination {
-        bottom: 8rem;
+        bottom: 5rem;
     }
 }
 
