@@ -124,7 +124,7 @@ $(function () {
                 slidesPerView: 1,
             },
 
-            601: {
+            901: {
                 slidesPerView: 3,
                 spaceBetween: 76,
             },
