@@ -23,8 +23,7 @@
     width: 152rem;
     margin: 0 auto;
 
-    /* width: 79.167vw; */
-    width: 79.167%;
+    width: 79.1667%;
 }
 
 .visual {
@@ -33,8 +32,6 @@
     height: 108rem;
     overflow: hidden;
     animation: visual 0.7s ease-out forwards;
-
-    height: 56.25vw;
 }
 
 .visual iframe {
@@ -73,8 +70,6 @@
     font-size: 7.5rem;
     font-weight: 700;
     color: var(--Light-100);
-
-    font-size: clamp(4rem, 3.906vw, 7.5rem);
 }
 
 .app-btn {
@@ -82,9 +77,6 @@
     justify-content: center;
     padding-top: 7.4rem;
     gap: 3.5rem;
-
-    padding-top: 3.854vw;
-    gap: 1.823vw;
 }
 
 .app-btn a {
@@ -93,8 +85,7 @@
     background: var(--Light-100);
     border-radius: 30rem;
 
-    border-radius: 15.625vw;
-    padding: 0.938vw 2.552vw;
+    padding: 1.9759% 5.3787%;
 }
 
 .app-btn a:nth-child(1)::after {
@@ -102,10 +93,7 @@
     width: 14.3rem;
     height: 3.4rem;
     display: block;
-    background: url(../img/google.jpg) no-repeat 100% / contain;
-
-    width: 7.448vw;
-    height: 1.771vw;
+    background: url(../img/google.jpg) no-repeat 50% / contain;
 }
 
 .app-btn a:nth-child(2)::after {
@@ -113,17 +101,15 @@
     width: 14.3rem;
     height: 3.4rem;
     display: block;
-    background: url(../img/apple.jpg) no-repeat 100% / contain;
-
-    width: 7.448vw;
-    height: 1.771vw;
+    background: url(../img/apple.jpg) no-repeat 50% / contain;
 }
 /* visual end */
 
 /* about */
 .about {
     padding: 26.5rem 0 0;
-    padding: 13.802vw 0 0;
+
+    padding: 13.8% 0 0;
 }
 
 .about-con li {
@@ -132,7 +118,7 @@
     align-items: center;
     justify-content: space-between;
 
-    padding-bottom: 18.229vw;
+    padding-bottom: 23.0263%;
 }
 
 .about-con li:nth-child(2),
@@ -141,13 +127,12 @@
 }
 
 .about-con dl dt {
+    padding-top: 3rem;
     font-size: 4rem;
     font-weight: 700;
 
-    padding-top: 3rem;
-
-    padding-top: 1.563vw;
-    font-size: clamp(2.2rem, 2.083vw, 4rem);
+    padding-top: 4.4313%;
+    font-size: clamp(2.2rem, 2.0833vw, 4rem);
 }
 
 .about-con dl dd {
@@ -156,8 +141,8 @@
     font-weight: 400;
     color: var(--Darck-60);
 
-    padding-top: 1.042vw;
-    font-size: clamp(1.3rem, 1.042vw, 2.4rem);
+    padding-top: 2.9542%;
+    font-size: clamp(1.3rem, 1.25vw, 2.4rem);
 }
 
 .about-con figure {
@@ -166,9 +151,7 @@
     border-radius: 4rem;
     overflow: hidden;
 
-    width: 36.094vw;
-    height: 24.609vw;
-    border-radius: 2.083vw;
+    width: 45.7895%;
 }
 
 .about-con figure img {
@@ -182,47 +165,44 @@
     display: block;
     width: 13.2rem;
     height: 9rem;
-    background: url(../img/bike-icon.svg) no-repeat 100% / contain;
+    background: url(../img/bike-icon.svg) no-repeat 50% / contain;
 
-    width: 6.875vw;
-    height: 4.688vw;
+    width: 19.4978%;
 }
 .about-con li:nth-child(2) dl::before {
     content: "";
     display: block;
     width: 7.5rem;
     height: 9rem;
-    background: url(../img/download-icon.svg) no-repeat 100% / contain;
+    background: url(../img/download-icon.svg) no-repeat 50% / contain;
 
-    width: 3.906vw;
-    height: 4.688vw;
+    width: 11.0783%;
 }
 .about-con li:nth-child(3) dl::before {
     content: "";
     display: block;
     width: 9rem;
     height: 9rem;
-    background: url(../img/sprout-icon.svg) no-repeat 100% / contain;
+    background: url(../img/sprout-icon.svg) no-repeat 50% / contain;
 
-    width: 4.688vw;
-    height: 4.688vw;
+    width: 13.2939%;
 }
 .about-con li:nth-child(4) dl::before {
     content: "";
     display: block;
     width: 7.6rem;
     height: 7.6rem;
-    background: url(../img/QR-icon.svg) no-repeat 100% / contain;
+    background: url(../img/QR-icon.svg) no-repeat 50% / contain;
 
-    width: 3.9583vw;
-    height: 3.9583vw;
+    width: 11.226%;
 }
 /* about end */
 
 /* phone */
 .phone {
     padding-bottom: 25.1rem;
-    padding-bottom: 13.021vw;
+
+    padding-bottom: 13.25%;
 }
 
 .phone-all {
@@ -231,15 +211,12 @@
     display: flex;
     align-items: center;
 
-    width: 46.875vw;
+    width: 59.25%;
 }
 
 .phone-con {
     width: 40rem;
-    height: 75.5rem;
-
-    width: 20.833vw;
-    height: 39.323vw;
+    width: 44.4444%;
 }
 
 .swiper-slide figure img {
@@ -252,22 +229,20 @@
     flex-direction: column;
     gap: 7rem;
     color: var(--Darck-30);
-
-    gap: 3.646vw;
 }
 
 .text-con dt {
     font-weight: 900;
     font-size: 4rem;
 
-    font-size: clamp(2.5rem, 2.083vw, 4rem);
+    font-size: clamp(2.5rem, 2.0833vw, 4rem);
 }
 
 .text-con dd {
     font-weight: 500;
     font-size: 1.8rem;
 
-    font-size: clamp(1.5rem, 0.938vw, 1.8rem);
+    font-size: clamp(1.5rem, 1.4063vw, 1.8rem);
 }
 
 .text-con.on {
@@ -292,8 +267,8 @@
     font-weight: 800;
     color: var(--Light-100);
 
-    padding-top: 6.51vw;
-    font-size: clamp(2rem, 2.083vw, 4rem);
+    padding-top: 8.2237%;
+    font-size: clamp(2.5rem, 21.0526vw, 4rem);
 }
 
 .guide-cards {
@@ -301,7 +276,11 @@
     display: flex;
     justify-content: space-between;
 
-    padding: 4.063vw 0 8.229vw;
+    overflow-x: auto;
+    scrollbar-width: none;
+    gap: 2rem;
+
+    padding: 5.1316% 0 10.3947%;
 }
 
 .guide-cards li a {
@@ -316,11 +295,6 @@
 
     background: var(--main-color);
     color: var(--Light-100);
-
-    width: 25vw;
-    height: 15.99vw;
-    padding: 1.875vw 2.344vw;
-    border-radius: 1.563vw;
 }
 
 .guide-cards li a::after {
@@ -329,9 +303,7 @@
     height: 8.5rem;
     margin-top: 15rem;
 
-    width: 4.427vw;
-    height: 4.427vw;
-    margin-top: 7.813vw;
+    margin-top: 38.5263%;
 }
 
 .guide-cards li:nth-child(1) a::after {
@@ -358,7 +330,7 @@
     font-size: 4rem;
     font-weight: 800;
 
-    font-size: clamp(2rem, 2.083vw, 4rem);
+    font-size: clamp(2.5rem, 21.0526vw, 4rem);
 }
 
 .guide-cards dl dd {
@@ -367,8 +339,8 @@
 
     padding-top: 1.5rem;
 
-    font-size: clamp(1.6rem, 1.25vw, 2.4rem);
-    padding-top: 0.781vw;
+    padding-top: 7.0833%;
+    font-size: clamp(1.6rem, 1.4063vw, 2.4rem);
 }
 
 .guide-cards li a:hover {
@@ -381,36 +353,29 @@
     padding: 22.7rem 0 21.3rem;
     position: relative;
 
-    padding: 11.823vw 0 11.131vw;
+    padding: 11.8229% 0 11.0938%;
 }
 
 .safety-guide .swiper-pagination {
     position: absolute;
-    bottom: 14rem;
+    bottom: 10rem;
 
     display: flex;
     justify-content: center;
     gap: 1rem;
 
-    bottom: 7.344vw;
-    gap: 0.521vw;
+    bottom: 10%;
 }
 
 .swiper-pagination-bullet-active {
     width: 1.5rem;
     height: 1.5rem;
     background: var(--main-color3);
-
-    width: 0.781vw;
-    height: 0.781vw;
 }
 
 .swiper-pagination-bullet {
     width: 1.5rem;
     height: 1.5rem;
-
-    width: 0.781vw;
-    height: 0.781vw;
 }
 
 .safety-guide .button-prev {
@@ -419,31 +384,28 @@
     height: 8rem;
     background: url(../img/l-arrow-icon.svg) no-repeat center / 30%;
     top: 50%;
-    left: 7rem;
+    left: 3.5%;
 
     border-radius: 100%;
     transition: 0.2s;
     z-index: 2;
 
-    width: 4.271vw;
-    height: 4.271vw;
-    left: 3.646vw;
+    width: 4%;
 }
+
 .safety-guide .button-next {
     position: absolute;
     width: 8rem;
     height: 8rem;
     background: url(../img/r-arrow-icon.svg) no-repeat center / 30%;
     top: 50%;
-    right: 7rem;
+    right: 3.5%;
 
     border-radius: 100%;
     transition: 0.2s;
     z-index: 2;
 
-    width: 4.271vw;
-    height: 4.271vw;
-    right: 3.646vw;
+    width: 4%;
 }
 
 .safety-guide .button-prev:hover {
@@ -452,8 +414,7 @@
     background-color: var(--main-color3);
     z-index: 2;
 
-    width: 4.271vw;
-    height: 4.271vw;
+    width: 4%;
 }
 .safety-guide .button-next:hover {
     position: absolute;
@@ -462,18 +423,16 @@
     background-color: var(--main-color3);
     z-index: 2;
 
-    width: 4.271vw;
-    height: 4.271vw;
+    width: 4%;
 }
 
 .safety-guide h3 {
     font-size: 4rem;
     font-weight: 800;
     color: var(--main-color3);
-
     text-align: center;
 
-    font-size: clamp(2rem, 2.083vw, 4rem);
+    font-size: clamp(2.5rem, 21.0526vw, 4rem);
 }
 
 .safety-con {
@@ -483,7 +442,7 @@
 .safety-wrapper {
     padding-top: 9.9rem;
 
-    padding-top: 5.156vw;
+    padding-top: 6.5132%;
 }
 
 .swiper-slide {
@@ -495,16 +454,14 @@
 
 .swiper-slide dl {
     padding-top: 1.5rem;
-    padding-top: 0.781vw;
+    padding-top: 5.5556%;
 }
 
 .swiper-slide dl dt {
-    padding-top: 1.5rem;
     font-size: 3rem;
     font-weight: 700;
 
-    font-size: clamp(1.8rem, 1.25vw, 3rem);
-    padding-top: 0.781vw;
+    font-size: clamp(2.5rem, 1.5625vw, 3rem);
 }
 
 .swiper-slide dl dd {
@@ -512,16 +469,13 @@
     font-size: 1.7rem;
     font-weight: 400;
 
-    font-size: clamp(1.6rem, 0.781vw, 1.7rem);
-    padding-top: 0.781vw;
+    padding-top: 8.6207%;
+    font-size: clamp(1.6rem, 0.8854vw, 1.7rem);
 }
 
 .safety-guide .swiper-slide figure {
     width: 21.6rem;
     height: 21.4rem;
-
-    width: 11.25vw;
-    height: 11.146vw;
 }
 /* safety-guide end */
 
@@ -530,7 +484,7 @@
     background: var(--main-color2);
     padding: 13.2rem 0;
 
-    padding: 6.875vw 0;
+    padding: 6.875% 0;
 }
 
 .youtube-all {
@@ -541,7 +495,7 @@
 .youtube-text {
     padding-top: 8.4rem;
 
-    padding-top: 4.375vw;
+    padding-top: 16.3743%;
 }
 
 .youtube-text h4 {
@@ -549,7 +503,7 @@
     font-weight: 700;
     color: var(--Light-100);
 
-    font-size: clamp(2.2rem, 2.083vw, 5rem);
+    font-size: clamp(2.2rem, 2.6041vw, 5rem);
 }
 
 .youtube-text p {
@@ -559,8 +513,8 @@
 
     padding-top: 1.4rem;
 
-    font-size: clamp(1.3rem, 0.938vw, 2.4rem);
-    padding-top: 0.729rem;
+    padding-top: 2.729%;
+    font-size: clamp(1.3rem, 1.25vw, 2.4rem);
 }
 
 .video-list {
@@ -568,8 +522,8 @@
     gap: 1.7rem;
     padding-top: 7rem;
 
-    padding-top: 3.646vw;
-    gap: 0.938vw;
+    gap: 3.3138%;
+    padding-top: 13.6452%;
 }
 
 .video-list li {
@@ -581,12 +535,10 @@
     color: var(--Light-100);
     font-size: 2.5rem;
     font-weight: 700;
-
     cursor: pointer;
 
-    padding: 1.146vw 2.656vw;
-    font-size: clamp(1.2rem, 1.042vw, 2.5rem);
-    border-radius: 15.625vw;
+    padding: 4.2885% 9.9415%;
+    font-size: clamp(1.2rem, 1.302vw, 2.5rem);
 }
 
 .video-list li:hover {
@@ -603,9 +555,7 @@
     border-radius: 4rem;
     overflow: hidden;
 
-    width: 46.771vw;
-    height: 26.979vw;
-    border-radius: 2.083vw;
+    width: 59.0789%;
 }
 
 .youtube figure img {
@@ -652,8 +602,6 @@
 .video {
     width: 102.4rem;
     aspect-ratio: 16/9;
-
-    width: 53.333vw;
 }
 
 .video iframe {
@@ -672,10 +620,7 @@
     background: url(../img/close-icon.svg) no-repeat center/50%;
     cursor: pointer;
 
-    width: 3.646vw;
-    height: 3.646vw;
-    top: -0.4vw;
-    right: -3.646vw;
+    width: 6.8359%;
 }
 /* youtube end */
 
@@ -694,158 +639,39 @@
     }
 }
 
-@media (max-width: 1520px) {
-    .inner {
-        width: 85%;
-    }
-
-    .gnb li {
-        font-weight: 600;
-    }
-}
 /* --------------------------------------------------------------------------------------------------------- */
 
-@media (max-width: 1024px) {
-    .inner {
-        width: 92.6rem;
-
-        width: 90.43%;
-    }
-    #header nav {
-        padding: 5rem 0;
-    }
-
-    .gnb {
-        display: none;
-    }
-
-    .nav-con {
-        display: flex;
-        gap: 4rem;
-    }
-
-    .language strong::after {
-        width: 1rem;
-        height: 1rem;
-    }
-    .language strong::before {
-        width: 1.5rem;
-        height: 1.7rem;
-    }
-    .language strong::after:hover {
-        width: 1rem;
-        height: 1rem;
-    }
-    .language strong::before:hover {
-        width: 1.5rem;
-        height: 1.7rem;
-    }
-
-    .more-btn a {
-        display: block;
-        width: 3.2rem;
-        height: 0.7rem;
-
-        background: url(../img/moer-icon.svg) no-repeat 50% / contain;
-    }
-    /* 헤더 끝 */
-
-    .about-con figure {
-        width: 42.4rem;
-        height: 28.6rem;
-
-        width: 41.41vw;
-        height: 27.93vw;
-    }
-
+@media (max-width: 1500px) {
     .phone-all {
-        width: 64.3rem;
-
-        width: 62.79vw;
-    }
-
-    .phone-con {
-        width: 30.5rem;
-        height: 57.6rem;
-
-        width: 29.79vw;
-        height: 56.25vw;
-    }
-
-    .usage-guide h3 {
-        padding-top: 8.1rem;
-        padding-top: 9vw;
-    }
-
-    .guide-cards {
-        display: flex;
-        padding: 4rem 0 7.3rem;
-        overflow-x: auto;
-        scrollbar-width: none;
-        min-width: 36rem;
-        gap: 2rem;
-    }
-
-    .guide-cards li a {
-        width: 29.1rem;
-        height: 18.6rem;
-        padding: 2.2rem 2.7rem;
-        border-radius: 1.8rem;
-        flex: 0 0 auto;
-    }
-
-    .guide-cards li a::after {
-        margin-top: 9.5rem;
-        width: 5.1rem;
-        height: 5.1rem;
-    }
-
-    .safety-guide {
-        padding-bottom: 11.4rem;
+        /* width: 64.3rem;
+        height: 57.6rem; */
     }
 
     .safety-guide .swiper-slide figure {
         width: 12.9rem;
         height: 12.8rem;
+    }
+}
 
-        width: 12.6vw;
-        height: 12.5vw;
+@media (max-width: 1024px) {
+    .phone-all {
+        width: 64.3rem;
+        height: 57.6rem;
     }
 
-    .safety-guide .swiper-slide dt {
-        font-size: 1.8rem;
-    }
-    .safety-guide .swiper-slide dd {
-        font-size: 1.3rem;
+    .about-con figure {
+        height: 28.6rem;
     }
 
     .youtube figure {
-        width: 54.5rem;
         height: 31.4rem;
-
-        width: 53.22vw;
-        height: 30.66vw;
     }
-    /* 
-    .sns li a {
-        justify-content: space-between;
-        width: 22.1rem;
-    } */
 }
 
-/* --------------------------------------------------------------------------------------------------------- */
-@media (max-width: 800px) {
-    .inner {
-        width: 50rem;
-
-        width: 90.6977vw;
-    }
-
+@media (max-width: 930px) {
     .about li {
         flex-direction: column;
         align-items: flex-start;
-
-        gap: 2.2rem;
     }
 
     .about li:nth-child(2),
@@ -853,13 +679,34 @@
         flex-direction: column;
     }
 
+    .about-text {
+        padding-bottom: 2.2rem;
+    }
+
     .about-con figure {
         width: 100%;
         height: 26.3rem;
     }
 
+    .video-list {
+        padding-top: 2.1rem;
+    }
+
+    .youtube-all {
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .youtube figure {
+        width: 100%;
+    }
+}
+/* --------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 800px) {
     .phone-all {
         flex-direction: column;
+        width: 24.6rem;
         height: 52.7rem;
     }
 
@@ -892,92 +739,10 @@
     .safety-guide .swiper-pagination {
         bottom: 8rem;
     }
-
-    .youtube-all {
-        gap: 2rem;
-        flex-direction: column;
-    }
-
-    .youtube figure {
-        width: 100%;
-        height: 22.4rem;
-    }
-
-    /* .sns {
-        flex-wrap: wrap;
-    } */
 }
 
 @media (max-width: 600px) {
     .inner {
-        width: 39rem;
-
-        width: 90.6977vw;
-    }
-
-    .logo a {
-        width: 15.7rem;
-        height: 3.5rem;
-    }
-    .join-btn {
-        display: none;
-    }
-
-    .language {
-        display: none;
-    }
-
-    .visual {
-        height: 95.4rem;
-    }
-
-    .app-btn {
-        gap: 2.6rem;
-    }
-
-    .app-btn a {
-        padding: 1.2rem 3.6rem;
-        padding: 2.79vw 8.37vw;
-    }
-
-    .app-btn a:nth-child(1)::after,
-    .app-btn a:nth-child(2)::after {
-        width: 10.7rem;
-        height: 2.5rem;
-
-        width: 24.88vw;
-        height: 5.81vw;
-    }
-
-    .usage-guide h3 {
-        padding-top: 6.1rem;
-    }
-
-    .safety-guide .swiper-slide figure {
-        width: 19rem;
-        height: 19rem;
-    }
-
-    .swiper-slide dl dd {
-        padding-top: 1.3rem;
-    }
-
-    .safety-guide .button-next,
-    .safety-guide .button-prev {
-        width: 4.5rem;
-        height: 4.5rem;
-    }
-    .safety-guide .button-next:hover,
-    .safety-guide .button-prev:hover {
-        width: 4.5rem;
-        height: 4.5rem;
-    }
-
-    .video-list {
-        gap: 0.8rem;
-    }
-
-    .video-list li {
-        padding: 1rem 2.5rem;
+        /* width: 39rem; */
     }
 }
