@@ -836,4 +836,13 @@
     .youtube figure {
         height: 22.4rem;
     }
+
+    .video {
+        width: 35rem;
+    }
+
+    .btn-close {
+        height: 3rem;
+        right: -3rem;
+    }
 }
