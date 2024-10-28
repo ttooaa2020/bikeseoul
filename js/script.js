@@ -289,4 +289,20 @@ $(function () {
     });
 
     // question end------------------------------------------------------------
+
+    // 모바일 더보기
+    const btnMenu = document.querySelector(".more-btn");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const btnClose = document.querySelector(".mobile-btn-close");
+
+    btnMenu.addEventListener("click", () => {
+        mobileMenu.classList.add("active");
+    });
+
+    // 대상 .classList.remove('클래스명)//
+
+    btnClose.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+    });
+    // 모바일 더보기 end
 });

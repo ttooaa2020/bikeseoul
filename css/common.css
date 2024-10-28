@@ -292,7 +292,7 @@ header.hide {
     background: var(--main-color) url(../img/foot-icon-1.svg) no-repeat center/50%;
 }
 .sns li:nth-child(2)::before {
-    background: var(--main-color) url(../img/foot-icon-2.svg) no-repeat center/50%;
+    background: var(--main-color) url(../img/foot-icon-2.svg) no-repeat center/ 50%;
 }
 .sns li:nth-child(3)::before {
     background: var(--main-color) url(../img/foot-icon-3.svg) no-repeat center/50%;
@@ -307,13 +307,15 @@ header.hide {
     width: 0.6rem;
     height: 1.3rem;
     padding-left: 1rem;
-    background: url(../img/arrow-sns.svg) no-repeat center/50%;
+    background: url(../img/arrow-sns.svg) no-repeat 50% / contain;
 }
 
 .footer-con {
     display: flex;
     justify-content: space-between;
     padding-top: 9.7rem;
+
+    padding-top: 6.3816%;
 }
 
 .foot-logo {
@@ -390,6 +392,7 @@ address {
     gap: 1.3rem;
     bottom: 5rem;
     right: 7.5rem;
+    z-index: 100;
 
     bottom: 11.5%;
     right: 3.9063%;
@@ -400,7 +403,7 @@ address {
     width: 7.4rem;
     height: 7.4rem;
     border-radius: 100%;
-    background: var(--main-color3) url(../img/as-icon.svg) no-repeat center/40%;
+    background: var(--main-color3) url(../img/as-icon.svg) no-repeat center/50%;
     border: 1px solid #ccc;
 }
 
@@ -409,9 +412,57 @@ address {
     width: 7.4rem;
     height: 7.4rem;
     border-radius: 100%;
-    background: var(--main-color) url(../img/top-icon.svg) no-repeat center/30%;
+    background: var(--main-color) url(../img/top-icon.svg) no-repeat center/40%;
 }
 /* top-btn end */
+
+/* 모바일 메뉴 */
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: var(--main-color3);
+    color: #fff;
+    transition: 0.4s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8rem;
+
+    z-index: 1000;
+}
+
+.mobile-btn-close {
+    position: absolute;
+    top: 7rem;
+    right: 5.2rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    background: url(../img/close-icon.svg) no-repeat 40% / contain;
+    z-index: 1000;
+}
+
+.mobile-gnb {
+    margin-top: 15rem;
+}
+
+.mobile-gnb li a {
+    font-weight: 600;
+    font-size: 2.2rem;
+    display: block;
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+/* 모바일 메뉴 end */
 
 @media (max-width: 1520px) {
     .gnb li {
@@ -428,9 +479,10 @@ address {
         width: 92.6rem;
     }
 
-    /* .foot-nav li {
-        padding: 0 2.3rem;
-    } */
+    .sns li::before {
+        width: 3rem;
+        height: 3rem;
+    }
 }
 
 @media (max-width: 900px) {
@@ -457,7 +509,36 @@ address {
 }
 
 @media (max-width: 600px) {
+    header nav {
+        padding: 5.3rem 0;
+    }
+
+    .logo a {
+        width: 15.7rem;
+        height: 3.5rem;
+    }
+
     .join-btn {
         display: none;
+    }
+
+    .top-btn {
+        right: 2rem;
+    }
+
+    .service {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .top {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .footer-con {
+        padding-top: 4.1rem;
     }
 }

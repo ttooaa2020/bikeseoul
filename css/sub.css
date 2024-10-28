@@ -26,6 +26,13 @@ h3 {
     }
 }
 
+.inner {
+    width: 152rem;
+    margin: 0 auto;
+
+    width: 79.1667%;
+}
+
 /* visual */
 .visual {
     position: relative;
@@ -50,11 +57,15 @@ h3 {
 .visual-text h2 {
     font-size: 5rem;
     font-weight: 700;
+
+    font-size: clamp(4rem, 2.6041vw, 5rem);
 }
 
 .visual-text p {
     font-size: 3rem;
     font-weight: 400;
+
+    font-size: clamp(2rem, 1.5625vw, 3rem);
 }
 
 .visual figure img {
@@ -68,12 +79,17 @@ h3 {
 /* type */
 .type {
     padding-top: 14.7rem;
+
+    padding-top: 7.6563%;
 }
 
 .type-list {
     display: flex;
     padding-top: 7.8rem;
     justify-content: space-between;
+    gap: 2rem;
+
+    padding-top: 5.1316%;
 }
 
 .type-list li {
@@ -87,6 +103,8 @@ h3 {
     width: 49rem;
     height: 55.6rem;
     border-radius: 4rem;
+
+    width: 32.2368%;
 }
 
 .type-list li::before {
@@ -125,8 +143,11 @@ h3 {
     font-weight: 700;
 
     border: 5px solid var(--Light-100);
+
     padding: 1rem 3rem;
     border-radius: 30rem;
+
+    font-size: clamp(1.8rem, 1.302vw, 2.5rem);
 }
 
 .type-text p {
@@ -135,8 +156,9 @@ h3 {
     padding-top: 2.3rem;
 
     opacity: 0;
-
     overflow: hidden;
+
+    font-size: clamp(1.3rem, 1.0416vw, 2rem);
 }
 
 .type-list li:hover .type-text {
@@ -158,12 +180,17 @@ h3 {
 /* time */
 .time {
     padding-top: 29.3rem;
+
+    padding-top: 15.2604%;
 }
 
 .time-list {
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
     padding-top: 7.8rem;
+
+    padding-top: 5.1316%;
 }
 
 .time-list li {
@@ -177,6 +204,10 @@ h3 {
     font-size: 3rem;
     font-weight: 700;
     color: var(--main-color3);
+
+    width: 22.3684%;
+    padding: 2.2368%;
+    font-size: clamp(1.6rem, 1.5625vw, 3rem);
 }
 
 .time-list li::after {
