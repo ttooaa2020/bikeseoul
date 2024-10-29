@@ -133,6 +133,8 @@
 
 .about-con li:nth-child(even) {
     flex-direction: row-reverse;
+
+    /* even: 짝수들만 포함 시키는것 */
 }
 
 .about-con dl dt {
@@ -479,7 +481,7 @@
 }
 /* safety-guide end */
 
-/* youtube */
+/* youtube  */
 .youtube {
     background: var(--main-color2);
     padding: 13.2rem 0;
@@ -490,10 +492,13 @@
 .youtube-all {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8%;
 }
 
 .youtube-text {
     padding-top: 8.4rem;
+    flex: 1 1 max(30%, 300px);
 
     padding-top: 16.3743%;
 }
@@ -517,6 +522,23 @@
     font-size: clamp(1.3rem, 1.25vw, 2.4rem);
 }
 
+.youtube figure {
+    width: 89.8rem;
+    height: 51.8rem;
+    flex: 1 1 max(61%, 500px);
+
+    border-radius: 4rem;
+    overflow: hidden;
+
+    width: 59.0789%;
+}
+
+.youtube figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .video-list {
     display: flex;
     gap: 1.7rem;
@@ -538,7 +560,7 @@
     cursor: pointer;
 
     padding: 4.2885% 9.9415%;
-    font-size: clamp(1.2rem, 1.302vw, 2.5rem);
+    font-size: clamp(1.1rem, 1.302vw, 2.5rem);
 }
 
 .video-list li:hover {
@@ -546,22 +568,6 @@
 
     font-weight: 800;
     color: var(--Darck-100);
-}
-
-.youtube figure {
-    width: 89.8rem;
-    height: 51.8rem;
-
-    border-radius: 4rem;
-    overflow: hidden;
-
-    width: 59.0789%;
-}
-
-.youtube figure img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .dim {
@@ -672,10 +678,6 @@
         height: 28.6rem;
     }
 
-    .youtube figure {
-        height: 31.4rem;
-    }
-
     .guide-cards li a {
         width: 29.1rem;
         height: 18.6rem;
@@ -695,28 +697,27 @@
         width: 1rem;
         height: 1rem;
     }
+
+    .youtube figure {
+        border-radius: 2.4rem;
+    }
 }
 
 @media (max-width: 930px) {
     .about-text {
         padding-bottom: 2.2rem;
     }
+}
 
-    .video-list {
-        padding-top: 2.1rem;
-    }
-
-    .youtube-all {
-        gap: 2rem;
-        flex-direction: column;
+@media (max-width: 890px) {
+    .youtube-con {
+        padding-bottom: 2rem;
     }
 
     .youtube figure {
-        width: 100%;
+        height: 22.4rem;
     }
-}
 
-@media (max-width: 840px) {
     .video {
         width: 35rem;
     }
@@ -834,9 +835,9 @@
         height: 1.2rem;
     }
 
-    .youtube figure {
+    /* .youtube figure {
         height: 22.4rem;
-    }
+    } */
 }
 
 @media (max-width: 430px) {
@@ -849,3 +850,8 @@
         right: -3rem;
     }
 }
+
+/* 624정도에서 유튜브에 버튼 내용 글씨들 수정
+about처럼 그그 쌤이 해준대로 만들기  */
+
+/* 그리고~ 다른 페이지 디자인 하자^^ */
