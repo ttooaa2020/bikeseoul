@@ -184,6 +184,16 @@ $(function () {
         $video.attr("src", "");
     });
 
+    // 배경 클릭 시 비디오 닫기
+    $dim.on("click", function (e) {
+        if (!$(e.target).closest($videoWrap).length) {
+            // 비디오를 제외한 배경 클릭 확인
+            $dim.fadeOut();
+            $videoWrap.removeClass("active");
+            $video.attr("src", ""); // 동영상 주소 삭제 (소리 삭제)
+        }
+    });
+
     // youtube end------------------------------------------------------------
 
     // 이용 방법------------------------------------------------------------
@@ -299,7 +309,7 @@ $(function () {
         mobileMenu.classList.add("active");
     });
 
-    // 대상 .classList.remove('클래스명)//
+    // ��상 .classList.remove('클래스명)//
 
     btnClose.addEventListener("click", () => {
         mobileMenu.classList.remove("active");

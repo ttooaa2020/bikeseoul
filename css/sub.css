@@ -580,6 +580,9 @@ h3 {
 }
 
 @media (max-width: 1300px) {
+    .type-text {
+        bottom: 2rem;
+    }
     .type-list li {
         height: 33.3rem;
         border-radius: 2.4rem;
