@@ -5,6 +5,8 @@ h3 {
     font-weight: 800;
     color: var(--main-color3);
     text-align: center;
+
+    font-size: clamp(2.5rem, 2.0833vw, 4rem);
 }
 
 @keyframes visual {
@@ -36,14 +38,13 @@ h3 {
 /* visual */
 .visual {
     position: relative;
-    height: 60rem;
+    max-height: 60rem;
     overflow: hidden;
     animation: visual 0.7s ease-out forwards;
 }
 
 .visual-text {
     position: absolute;
-
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -195,8 +196,10 @@ h3 {
 
 .time-list li {
     position: relative;
-    width: 34rem;
-    height: 29.7rem;
+    max-width: 34rem;
+    /* height: 29.7rem; */
+    height: auto;
+    aspect-ratio: 34 / 29.7;
     border: 5px solid var(--main-color3);
     border-radius: 4rem;
     padding: 3.4rem;
@@ -213,23 +216,42 @@ h3 {
 .time-list li::after {
     content: "";
     position: absolute;
-    width: 7.7rem;
-    height: 7.4rem;
 
     right: 3.4rem;
     bottom: 3.4rem;
+
+    right: 10.5%;
+    bottom: 12%;
 }
 
+/* 339 */
+
 .time-list li:nth-child(1)::after {
+    width: 4.1rem;
+    height: 7.4rem;
+
+    width: 12.0944%;
     background: url(../img/1.svg) no-repeat 50% / contain;
 }
 .time-list li:nth-child(2)::after {
+    width: 7.4rem;
+    height: 7.4rem;
+
+    width: 21.8289%;
     background: url(../img/clock.svg) no-repeat 50% / contain;
 }
 .time-list li:nth-child(3)::after {
+    width: 7.4rem;
+    height: 7.4rem;
+
+    width: 21.8289%;
     background: url(../img/money.svg) no-repeat 50% / contain;
 }
 .time-list li:nth-child(4)::after {
+    width: 7.7rem;
+    height: 6.1rem;
+
+    width: 22.7139%;
     background: url(../img/card.svg) no-repeat 50% / contain;
 }
 /* time end */
@@ -237,30 +259,41 @@ h3 {
 /* lend */
 .lend {
     padding-top: 31.8rem;
+
+    padding-top: 16.5625%;
 }
 
 .lend-tab {
     padding-top: 4.9rem;
     display: flex;
     flex-direction: column;
+
+    padding-top: 3.2237%;
 }
 
 /* 버튼들 */
 .lend-tabmenu {
     display: flex;
-    margin: 0 auto;
+    justify-content: center;
     gap: 1.6rem;
 }
 
 .lend-tabmenu button {
-    padding: 1.5rem 8.5rem;
+    width: 23.9rem;
+    height: 6.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     border-radius: 5rem;
     background: var(--Darck-30);
     color: var(--Light-100);
     font-size: 2.5rem;
     font-weight: 700;
-
     cursor: pointer;
+
+    width: 15.7237%;
+    font-size: clamp(1.8rem, 1.302vw, 2.5rem);
 }
 
 .lend-tabmenu button:hover,
@@ -271,6 +304,8 @@ h3 {
 /* 공통 값들 */
 .lend-tabcon {
     padding-top: 4.8rem;
+
+    padding-top: 3.1579%;
 }
 
 .lend-list-lcd,
@@ -289,6 +324,9 @@ h3 {
 
     cursor: pointer;
     transition: 0.4s;
+
+    width: 24.0132%;
+    padding-top: 13.4211%;
 }
 
 .lend-text {
@@ -305,6 +343,9 @@ h3 {
     font-size: 3.5rem;
     font-weight: 700;
     color: var(--main-color);
+
+    padding-top: 4.5%;
+    font-size: clamp(2rem, 1.823vw, 3.5rem);
 }
 
 .text-wrap {
@@ -315,24 +356,28 @@ h3 {
 
     opacity: 0;
     transition: all 0.4s ease;
+
+    padding-top: 3.5714%;
+    font-size: clamp(1.3rem, 1.25vw, 2.4rem);
 }
 
 .text-wrap p {
     padding-top: 4.2rem;
+    padding-top: 9.375%;
 }
 /* lcd */
 
 .lend-list-lcd li:nth-child(1) {
-    background: var(--main-color3) url(../img/lcd-1.jpg) no-repeat 0 0 / cover;
+    background: var(--main-color3) url(../img/lcd-1.jpg) no-repeat 50% / cover;
 }
 .lend-list-lcd li:nth-child(2) {
-    background: var(--main-color3) url(../img/lcd-2.jpg) no-repeat 0 0 / cover;
+    background: var(--main-color3) url(../img/lcd-2.jpg) no-repeat 50% / cover;
 }
 .lend-list-lcd li:nth-child(3) {
-    background: var(--main-color3) url(../img/lcd-3.jpg) no-repeat 0 0 / cover;
+    background: var(--main-color3) url(../img/lcd-3.jpg) no-repeat 50% / cover;
 }
 .lend-list-lcd li:nth-child(4) {
-    background: var(--main-color3) url(../img/lcd-4.jpg) no-repeat 0 0 / cover;
+    background: var(--main-color3) url(../img/lcd-4.jpg) no-repeat 50% / cover;
 }
 
 .lend-list-lcd li:nth-child(1) .lend-text::before {
@@ -340,24 +385,32 @@ h3 {
     width: 5.5rem;
     height: 7.5rem;
     background: url(../img/lcd-1-icon.svg) no-repeat 50% / contain;
+
+    width: 15.2768%;
 }
 .lend-list-lcd li:nth-child(2) .lend-text::before {
     content: "";
     width: 8.2rem;
     height: 7.5rem;
     background: url(../img/lcd-2-icon.svg) no-repeat 50% / contain;
+
+    width: 22.7682%;
 }
 .lend-list-lcd li:nth-child(3) .lend-text::before {
     content: "";
     width: 11.3rem;
     height: 7.5rem;
     background: url(../img/bike-icon.svg) no-repeat 50% / contain;
+
+    width: 31.3841%;
 }
 .lend-list-lcd li:nth-child(4) .lend-text::before {
     content: "";
     width: 5.8rem;
     height: 7.5rem;
     background: url(../img/lcd-3-icon.svg) no-repeat 50% / contain;
+
+    width: 16.1194%;
 }
 
 /* lcd */
@@ -365,16 +418,16 @@ h3 {
 /* qr */
 
 .lend-list-qr li:nth-child(1) {
-    background: var(--main-color3) url(../img/lcd-1.jpg) no-repeat 0 0 / cover;
+    background: var(--main-color3) url(../img/lcd-1.jpg) no-repeat 50% / cover;
 }
 .lend-list-qr li:nth-child(2) {
-    background: var(--main-color3) url(../img/qr-2.jpg) no-repeat 0 0 / cover;
+    background: var(--main-color3) url(../img/qr-2.jpg) no-repeat 50% / cover;
 }
 .lend-list-qr li:nth-child(3) {
-    background: var(--main-color3) url(../img/qr-3.jpg) no-repeat 0 0 / cover;
+    background: var(--main-color3) url(../img/qr-3.jpg) no-repeat 50% / cover;
 }
 .lend-list-qr li:nth-child(4) {
-    background: var(--main-color3) url(../img/qr-4.jpg) no-repeat 0 0 / cover;
+    background: var(--main-color3) url(../img/qr-4.jpg) no-repeat 50% / cover;
 }
 
 .lend-list-qr li:nth-child(1) .lend-text::before {
@@ -382,24 +435,32 @@ h3 {
     width: 5.5rem;
     height: 7.5rem;
     background: url(../img/lcd-1-icon.svg) no-repeat 50% / contain;
+
+    width: 15.2768%;
 }
 .lend-list-qr li:nth-child(2) .lend-text::before {
     content: "";
     width: 8.2rem;
     height: 7.5rem;
     background: url(../img/QR-icon.svg) no-repeat 50% / contain;
+
+    width: 22.7682%;
 }
 .lend-list-qr li:nth-child(3) .lend-text::before {
     content: "";
     width: 11.3rem;
     height: 7.5rem;
     background: url(../img/qr-1-icon.svg) no-repeat 50% / contain;
+
+    width: 18%;
 }
 .lend-list-qr li:nth-child(4) .lend-text::before {
     content: "";
     width: 5.8rem;
     height: 7.5rem;
     background: url(../img/lcd-3-icon.svg) no-repeat 50% / contain;
+
+    width: 16.1194%;
 }
 /* qr */
 
@@ -410,6 +471,9 @@ h3 {
     background: var(--main-color3);
     border-radius: 5rem;
     opacity: 1;
+
+    width: 32.7368%;
+    padding-top: 4.7%;
 }
 
 .lend-list-lcd,
@@ -429,6 +493,8 @@ h3 {
 /* question */
 .question {
     padding: 24.6rem 0 12.5rem;
+
+    padding: 12.8125% 0 6.5104%;
 }
 
 .question-title {
@@ -436,6 +502,8 @@ h3 {
     font-size: 6rem;
     font-weight: 800;
     color: var(--main-color);
+
+    font-size: clamp(3rem, 3.125vw, 6rem);
 }
 
 .question-list {
@@ -443,14 +511,17 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+
+    padding-top: 5.1316%;
 }
 
 .question-list li {
     background: var(--main-color3);
     padding: 3.5rem 6.4rem;
     border-radius: 4rem;
-
     cursor: pointer;
+
+    padding: 2.3026% 4.2105%;
 }
 
 .question-list strong {
@@ -461,6 +532,8 @@ h3 {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--Light-100);
+
+    font-size: clamp(1.2rem, 1.302vw, 2.5rem);
 }
 
 .question-list strong::after {
@@ -470,6 +543,8 @@ h3 {
     height: 4.2rem;
     background: url(../img/question-arrow.svg) no-repeat 50% / contain;
     transition: 0.4s;
+
+    width: 3.0172%;
 }
 
 .answer-wrap {
@@ -480,13 +555,200 @@ h3 {
     font-size: 2rem;
     font-weight: 400;
     color: var(--Light-100);
+
+    padding: 3.6% 0;
+    font-size: clamp(1rem, 1.0416vw, 2rem);
 }
 
 .answer-wrap p:nth-child(2) {
     padding-top: 4.5rem;
+
+    padding-top: 3.2328%;
 }
 
 .question-list li.on > strong::after {
     transform: rotate(180deg); /* trftY */
 }
 /* question  end*/
+
+/* 0000 */
+
+@media (max-width: 1500px) {
+    .inner {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .type-list li {
+        height: 33.3rem;
+        border-radius: 2.4rem;
+    }
+
+    .type-text strong {
+        border: 3px solid;
+    }
+
+    .time-list li {
+        border: 4px solid;
+        border-radius: 2.4rem;
+    }
+
+    .lend-tab li {
+        height: 40.4rem;
+        padding-top: 10rem;
+        border-radius: 2.4rem;
+    }
+
+    .question-list li {
+        border-radius: 2.4rem;
+    }
+}
+
+@media (max-width: 890px) {
+    .visual {
+        height: 57.6rem;
+    }
+
+    .visual figure img {
+        height: 57.6rem;
+    }
+
+    .visual-text {
+        gap: 0.9rem;
+    }
+
+    .type {
+        padding-top: 10.6rem;
+    }
+
+    .type-list {
+        padding-top: 3.1rem;
+        overflow-x: auto; /* 스크롤 가능하도록 설정 */
+        scroll-snap-type: x mandatory; /* 스냅 효과 추가 */
+        display: flex; /* flex 속성 유지 */
+    }
+
+    .type-list li {
+        width: 26.1rem;
+        height: 29.7rem;
+        flex: 0 0 auto; /* 항목의 너비를 고정 */
+        scroll-snap-align: start; /* 각 항목이 스냅되도록 설정 */
+    }
+
+    .time {
+        padding-top: 14.8rem;
+    }
+
+    .time-list {
+        padding-top: 4.3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .time-list li {
+        padding: 1.8rem 2.2rem;
+        width: calc(50% - 1rem); /* 2개씩 줄바꿈을 위해 너비 조정 및 간격 고려 */
+        margin-bottom: 1rem; /* 아래쪽 간격 추가 */
+    }
+
+    .lend {
+        padding-top: 14.8rem;
+    }
+
+    .lend-tabmenu button {
+        width: 50%;
+    }
+
+    .lend-tabmenu {
+        padding-top: 4.3rem;
+    }
+
+    .lend-list-lcd,
+    .lend-list-qr {
+        padding-top: 3.3rem;
+        flex-direction: column;
+    }
+
+    .lend-tab li {
+        width: 100%;
+        height: 13.1rem;
+        border-radius: 2.4rem;
+        padding-top: 2.9rem;
+    }
+
+    .lend-tab li.on {
+        width: 100%;
+        height: 28rem;
+        border-radius: 2.4rem;
+        padding-top: 3rem;
+    }
+
+    .lend-tab strong {
+        padding-top: 0.5rem;
+    }
+
+    .text-wrap {
+        padding-top: 0.5rem;
+    }
+
+    .lend-list-lcd li:nth-child(1) .lend-text::before {
+        content: "";
+        width: 3.1rem;
+        height: 3.8rem;
+        background: url(../img/lcd-1-icon.svg) no-repeat 50% / contain;
+    }
+    .lend-list-lcd li:nth-child(2) .lend-text::before {
+        content: "";
+        width: 4.8rem;
+        height: 2.9rem;
+        background: url(../img/lcd-2-icon.svg) no-repeat 50% / contain;
+    }
+    .lend-list-lcd li:nth-child(3) .lend-text::before {
+        content: "";
+        width: 6.3rem;
+        height: 4.2rem;
+        background: url(../img/bike-icon.svg) no-repeat 50% / contain;
+    }
+    .lend-list-lcd li:nth-child(4) .lend-text::before {
+        content: "";
+        width: 3.5rem;
+        height: 3.5rem;
+        background: url(../img/lcd-3-icon.svg) no-repeat 50% / contain;
+    }
+
+    .lend-list-qr li:nth-child(1) .lend-text::before {
+        content: "";
+        width: 3.1rem;
+        height: 3.8rem;
+        background: url(../img/lcd-1-icon.svg) no-repeat 50% / contain;
+    }
+    .lend-list-qr li:nth-child(2) .lend-text::before {
+        content: "";
+        width: 4rem;
+        height: 4rem;
+        background: url(../img/QR-icon.svg) no-repeat 50% / contain;
+    }
+    .lend-list-qr li:nth-child(3) .lend-text::before {
+        content: "";
+        width: 7rem;
+        height: 4rem;
+        background: url(../img/qr-1-icon.svg) no-repeat 50% / contain;
+    }
+    .lend-list-qr li:nth-child(4) .lend-text::before {
+        content: "";
+        width: 3.5rem;
+        height: 3.5rem;
+        background: url(../img/lcd-3-icon.svg) no-repeat 50% / contain;
+    }
+
+    .question {
+        padding: 13.5rem 0 6.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .time-list li::after {
+        bottom: 0.5rem;
+    }
+}
