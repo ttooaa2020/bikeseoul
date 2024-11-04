@@ -498,7 +498,7 @@
 
 .youtube-text {
     padding-top: 8.4rem;
-    flex: 1 1 max(30%, 300px);
+    flex: 1 1 max(42%, 300px);
 
     padding-top: 16.3743%;
 }
@@ -525,7 +525,7 @@
 .youtube figure {
     width: 89.8rem;
     height: 51.8rem;
-    flex: 1 1 max(61%, 500px);
+    flex: 1 1 max(58%, 500px);
 
     border-radius: 4rem;
     overflow: hidden;
@@ -850,8 +850,5 @@
         right: -3rem;
     }
 }
-
-/* 624정도에서 유튜브에 버튼 내용 글씨들 수정
-about처럼 그그 쌤이 해준대로 만들기  */
 
 /* 그리고~ 다른 페이지 디자인 하자^^ */
