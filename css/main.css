@@ -525,7 +525,7 @@
 .youtube figure {
     width: 89.8rem;
     height: 51.8rem;
-    flex: 1 1 max(58%, 500px);
+    flex: 1 1 max(57%, 500px);
 
     border-radius: 4rem;
     overflow: hidden;
