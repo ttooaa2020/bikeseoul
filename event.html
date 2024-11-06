@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>이벤트</title>
+
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/use.css" />
+        <link rel="stylesheet" href="./css/sub-common.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="./js/jquery-3.7.1.min.js"></script>
+
+        <script src="./js/jquery-3.7.1.min.js"></script>
+
+        <script src="./js/script.js" defer></script>
+
+        <!-- 기본 SEO 메타 태그 -->
+        <meta
+            name="description"
+            content="따릉이는 서울시민을 위한 공공 자전거 서비스로, 간편하게 자전거를 대여하고 반납할 수 있는 서비스입니다. 가까운 대여소 찾기, 요금 안내, 이용 방법 등을 확인해보세요."
+        />
+        <meta
+            name="keywords"
+            content="따릉이, 공공 자전거, 서울 자전거 대여, 자전거 대여 서비스, 서울시 자전거, 친환경 교통, 대여소 위치, 따릉이 요금, 대여 방법"
+        />
+        <link rel="canonical" href="https://ttooaa2020.github.io/bikeseoul/" />
+
+        <!-- Open Graph 메타 태그 (SNS 최적화) -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="서울시 공공 자전거 따릉이 - 서울 어디서나 자전거 대여 가능!" />
+        <meta
+            property="og:description"
+            content="서울의 공공 자전거 서비스 따릉이로 편리하게 자전거를 대여하고 환경도 보호하세요."
+        />
+        <meta property="og:url" content="https://ttooaa2020.github.io/bikeseoul/" />
+        <meta property="og:image" content="https://www.bikeseoul.com/img/main/main_visual.png" />
+
+        <!-- Twitter Card 메타 태그 -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="서울시 공공 자전거 따릉이 - 서울 어디서나 자전거 대여 가능!" />
+        <meta
+            name="twitter:description"
+            content="따릉이와 함께하는 스마트한 서울 생활! 누구나 쉽고 편리하게 이용할 수 있는 저탄소 이동수단 서울 자전거."
+        />
+        <meta name="twitter:image" content="https://www.bikeseoul.com/img/main/main_visual.png" />
+    </head>
+    <body>
+        <!-- 모바일용 메뉴 -->
+        <div class="mobile-menu">
+            <strong class="mobile-logo"> <i class="hidden">따릉이</i></strong>
+            <ul class="mobile-gnb">
+                <li><a href="./sub.html">대여하기</a></li>
+                <li><a href="./use.html">이용하기</a></li>
+                <li><a href="./map.html">지점찾기</a></li>
+                <li><a href="./event.html">이벤트</a></li>
+            </ul>
+            <button class="mobile-btn-close"><i class="hidden">닫기</i></button>
+        </div>
+        <!-- 모바일용 메뉴 end -->
+
+        <header id="header">
+            <div class="inner">
+                <nav>
+                    <h1 class="logo">
+                        <a href="./index.html"><i class="hidden">따릉이</i></a>
+                    </h1>
+
+                    <div class="nav-con">
+                        <ul class="gnb">
+                            <li><a href="./sub.html">대여하기</a></li>
+                            <li><a href="./use.html">이용하기</a></li>
+                            <li><a href="./map.html">지점 찾기</a></li>
+                            <li><a href="./event.html">이벤트</a></li>
+                        </ul>
+                        <div class="language">
+                            <a href="#"><strong>KOR</strong></a>
+                            <ul class="language-list">
+                                <li><a href="#">KOR</a></li>
+                                <li><a href="#">ENG</a></li>
+                                <li><a href="#">CHIN</a></li>
+                                <li><a href="#">JAP</a></li>
+                            </ul>
+                        </div>
+                        <div class="join-btn">
+                            <a href="#"><i class="hidden">로그인</i></a>
+                            <a href="#"><i class="hidden">회원가입</i></a>
+                        </div>
+
+                        <div class="more-btn">
+                            <a href="#"><i class="hidden">더보기</i></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div id="main">
+            <section class="visual">
+                <div class="visual-text">
+                    <h2 data-aos="fade-up">이벤트</h2>
+                    <p data-aos="fade-up">추천 코스로 새로운 경치를 즐기고, 특별 이벤트에 참여해 보세요</p>
+                </div>
+                <figure><img src="./img/event-visual.jpg" alt="#" /></figure>
+            </section>
+
+            <section class="event">
+                <div class="inner">
+                    <div class="event-title">
+                        <h3>이벤트로 새로운 경험과 혜택을 누리세요</h3>
+                    </div>
+
+                    <ul class="event-list">
+                        <li>
+                            <figure><img src="./img/event-list-1.jpg" alt="#" /></figure>
+                            <dl class="event-text">
+                                <dt>따릉이 현장 안내창구</dt>
+                                <dd>2024. 4. 17 ~ 12. 31</dd>
+                            </dl>
+                            <ul class="sns-con">
+                                <li>
+                                    <a href="https://www.facebook.com/seoulbike"><i>Facebook</i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/seoulbike_/"><i>Instagram</i></a>
+                                </li>
+                                <li>
+                                    <a href="https://blog.naver.com/2seoulbike"><i>Blog</i></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <figure><img src="./img/event-list-2.jpg" alt="#" /></figure>
+                            <dl class="event-text">
+                                <dt>따릉이길 스탬프 투어</dt>
+                                <dd>2024. 9. 2 ~ 11. 30</dd>
+                            </dl>
+                            <ul class="sns-con">
+                                <li>
+                                    <a href="https://www.facebook.com/seoulbike"><i>Facebook</i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/seoulbike_/"><i>Instagram</i></a>
+                                </li>
+                                <li>
+                                    <a href="https://blog.naver.com/2seoulbike"><i>Blog</i></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <figure><img src="./img/event-list-3.jpg" alt="#" /></figure>
+                            <dl class="event-text">
+                                <dt>따릉이길 SNS이벤트 개최</dt>
+                                <dd>2024. 9. 6 ~ 11. 30</dd>
+                            </dl>
+                            <ul class="sns-con">
+                                <li>
+                                    <a href="https://www.facebook.com/seoulbike"><i>Facebook</i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/seoulbike_/"><i>Instagram</i></a>
+                                </li>
+                                <li>
+                                    <a href="https://blog.naver.com/2seoulbike"><i>Blog</i></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <figure><img src="./img/event-list-4.jpg" alt="#" /></figure>
+                            <dl class="event-text">
+                                <dt>이벤트 리뷰를 부탁해</dt>
+                                <dd>2024. 10. 11 ~ 11. 29</dd>
+                            </dl>
+                            <ul class="sns-con">
+                                <li>
+                                    <a href="https://www.facebook.com/seoulbike"><i>Facebook</i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/seoulbike_/"><i>Instagram</i></a>
+                                </li>
+                                <li>
+                                    <a href="https://blog.naver.com/2seoulbike"><i>Blog</i></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <figure><img src="./img/event-list-5.jpg" alt="#" /></figure>
+                            <dl class="event-text">
+                                <dt>티머니GO X 따릉이 친구초대 이벤트</dt>
+                                <dd>2024. 10. 14 ~ 예산 소진 시까지</dd>
+                            </dl>
+                            <ul class="sns-con">
+                                <li>
+                                    <a href="https://www.facebook.com/seoulbike"><i>Facebook</i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/seoulbike_/"><i>Instagram</i></a>
+                                </li>
+                                <li>
+                                    <a href="https://blog.naver.com/2seoulbike"><i>Blog</i></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <figure><img src="./img/event-list-6.jpg" alt="#" /></figure>
+                            <dl class="event-text">
+                                <dt>서울 자전거도로, 참신한 이름을 지어주세요.</dt>
+                                <dd>2024. 5. 10 ~ 6. 6</dd>
+                            </dl>
+                            <ul class="sns-con">
+                                <li>
+                                    <a href="https://www.facebook.com/seoulbike"><i>Facebook</i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/seoulbike_/"><i>Instagram</i></a>
+                                </li>
+                                <li>
+                                    <a href="https://blog.naver.com/2seoulbike"><i>Blog</i></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <figure><img src="./img/event-list-7.jpg" alt="#" /></figure>
+                            <dl class="event-text">
+                                <dt>따릉이길 추천 공모전</dt>
+                                <dd>2024. 5. 10 ~ 6. 6</dd>
+                            </dl>
+                            <ul class="sns-con">
+                                <li>
+                                    <a href="https://www.facebook.com/seoulbike"><i>Facebook</i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/seoulbike_/"><i>Instagram</i></a>
+                                </li>
+                                <li>
+                                    <a href="https://blog.naver.com/2seoulbike"><i>Blog</i></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <figure><img src="./img/event-list-8.jpg" alt="#" /></figure>
+                            <dl class="event-text">
+                                <dt>따릉이와 함께 봄 인증샷 찍어요!</dt>
+                                <dd>2023. 4. 10 ~ 4. 23</dd>
+                            </dl>
+                            <ul class="sns-con">
+                                <li>
+                                    <a href="https://www.facebook.com/seoulbike"><i>Facebook</i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/seoulbike_/"><i>Instagram</i></a>
+                                </li>
+                                <li>
+                                    <a href="https://blog.naver.com/2seoulbike"><i>Blog</i></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <figure><img src="./img/event-list-9.jpg" alt="#" /></figure>
+                            <dl class="event-text">
+                                <dt>따릉이GO 지구사랑 챌린지</dt>
+                                <dd>2022. 6. 13 ~ 7. 17</dd>
+                            </dl>
+                            <ul class="sns-con">
+                                <li>
+                                    <a href="https://www.facebook.com/seoulbike"><i>Facebook</i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/seoulbike_/"><i>Instagram</i></a>
+                                </li>
+                                <li>
+                                    <a href="https://blog.naver.com/2seoulbike"><i>Blog</i></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="course">
+                <div class="inner">
+                    <div class="course-title">
+                        <h3>서울 20코스 즐기기 전에 알고 가세요</h3>
+                    </div>
+
+                    <div class="swiper course-list">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <figure><img src="./img/20-1.png" alt="#" /></figure>
+                                <strong>도심 속 메타세쿼이아 숲길 따라 따릉이가 간다~</strong>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure><img src="./img/20-2.png" alt="#" /></figure>
+                                <strong>불광천 따릉이길</strong>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure><img src="./img/20-3.png" alt="#" /></figure>
+                                <strong>용산에서 여의도까지 자전거로 한번에!</strong>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure><img src="./img/20-4.png" alt="#" /></figure>
+                                <strong>고궁, 도시 그리고 자연을 달리는 서울 한 줄 요약길.</strong>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure><img src="./img/20-5.png" alt="#" /></figure>
+                                <strong>한강공원으로 즐기는 따릉이길</strong>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure><img src="./img/20-6.png" alt="#" /></figure>
+                                <strong>한강 따라 자전거공원 따릉따릉</strong>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure><img src="./img/20-7.png" alt="#" /></figure>
+                                <strong>야경이 아름다운 따릉이 퇴근길</strong>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure><img src="./img/20-8.png" alt="#" /></figure>
+                                <strong>홍제천 폭포, 경의선 숲길 따라, 젊음의 홍대로</strong>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure><img src="./img/20-9.png" alt="#" /></figure>
+                                <strong>마포대교를 건너며 느끼는 여의도와 한강</strong>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure><img src="./img/20-10.png" alt="#" /></figure>
+                                <strong>청계천에서 중랑천을 따라 한강까지</strong>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure><img src="./img/20-11.png" alt="#" /></figure>
+                                <strong>따릉이와 함께 하는 한강 야경 여행</strong>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure><img src="./img/20-12.png" alt="#" /></figure>
+                                <strong>초록이 깃든 길</strong>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure><img src="./img/20-13.png" alt="#" /></figure>
+                                <strong>탁트인 목가적 풍경길</strong>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure><img src="./img/20-14.png" alt="#" /></figure>
+                                <strong>탄천따라 따릉따릉</strong>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure><img src="./img/20-15.png" alt="#" /></figure>
+                                <strong>여의천,양재천과 탄천을따라 한강까지 즐기자</strong>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure><img src="./img/20-16.png" alt="#" /></figure>
+                                <strong>7호선 꽃구경! 장미꽃, 벚꽃길, 그리고 중랑천</strong>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure><img src="./img/20-17.png" alt="#" /></figure>
+                                <strong>비바람 안 맞고 달리는 8km 코스 아시나요?</strong>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure><img src="./img/20-18.png" alt="#" /></figure>
+                                <strong>힐링 출퇴근길 따릉이길</strong>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure><img src="./img/20-19.png" alt="#" /></figure>
+                                <strong>물멍숲멍</strong>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure><img src="./img/20-20.png" alt="#" /></figure>
+                                <strong>청계천 따라 따릉따릉</strong>
+                            </div>
+                        </div>
+                        <div class="course-button-prev"><i class="hidden">이전</i></div>
+                        <div class="course-button-next"><i class="hidden">다음</i></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="more">
+                <div class="inner">
+                    <div class="more-con">
+                        <div class="more-title">
+                            <h4>더 많은 추천 코스를 보고 싶다면 서울 20코스로 확인 해보세요</h4>
+                        </div>
+                        <a href="https://www.sisul.or.kr/open_content/traffic/bike_course/index.html" class="more-btn"
+                            >자세히 보기</a
+                        >
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer id="footer">
+            <div class="inner">
+                <ul class="sns">
+                    <li>
+                        <a href="https://www.facebook.com/seoulbike"><i>Facebook</i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/seoulbike_/"><i>Instagram</i></a>
+                    </li>
+                    <li>
+                        <a href="https://blog.naver.com/2seoulbike"><i>Blog</i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.roblox.com/ko/games/7594841232/seoulbike"><i>Roblox</i></a>
+                    </li>
+                </ul>
+
+                <div class="footer-con">
+                    <h4 class="foot-logo">
+                        <a href="#"><i class="hidden">따릉이</i></a>
+                    </h4>
+
+                    <div class="foot-text">
+                        <ul class="foot-nav">
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">위치정보관련 약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">보험안내</a></li>
+                            <li><a href="#">도움주신 분</a></li>
+                        </ul>
+                        <div class="foot-con">
+                            <address>
+                                <p>서울특별시 중구 세종대로 110 서울특별시</p>
+                                <p>
+                                    대표자 오세훈, Tel : 1599-0120(365일, 24시간) (사업자등록번호 : 104-83-00469)
+                                    우편번호 04524
+                                </p>
+                                <p>COPYRIGHT ⓒ 2018 bikeseoul All RIGHTS RESERVED.</p>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="top-btn">
+            <a href="#" class="service"><i class="hidden">고객센터</i></a>
+            <a href="#header" class="top"><i class="hidden">TOP</i></a>
+        </div>
+    </body>
+</html>
