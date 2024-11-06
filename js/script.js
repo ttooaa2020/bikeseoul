@@ -114,38 +114,40 @@ $(function () {
     // phone-con end------------------------------------------------------------
 
     // safety-guide------------------------------------------------------------
-    const SafetyGuide = new Swiper(".safety", {
-        speed: 500,
-        loop: true,
-        slidesPerGroup: 1, // 한 번에 n개의 슬라이드를 그룹으로 이동
+    if (swiperContainer) {
+        const SafetyGuide = new Swiper(".safety", {
+            speed: 500,
+            loop: true,
+            slidesPerGroup: 1, // 한 번에 n개의 슬라이드를 그룹으로 이동
 
-        breakpoints: {
-            100: {
-                slidesPerView: 1,
+            breakpoints: {
+                100: {
+                    slidesPerView: 1,
+                },
+
+                901: {
+                    slidesPerView: 3,
+                    spaceBetween: 76,
+                },
+
+                1501: {
+                    slidesPerView: 4,
+                    spaceBetween: 146,
+                },
             },
 
-            901: {
-                slidesPerView: 3,
-                spaceBetween: 76,
+            pagination: {
+                el: ".safety-pagination",
+                clickable: true,
             },
 
-            1501: {
-                slidesPerView: 4,
-                spaceBetween: 146,
+            // Navigation arrows
+            navigation: {
+                nextEl: ".button-next",
+                prevEl: ".button-prev",
             },
-        },
-
-        pagination: {
-            el: ".safety-pagination",
-            clickable: true,
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: ".button-next",
-            prevEl: ".button-prev",
-        },
-    });
+        });
+    }
 
     // safety-guide end------------------------------------------------------------
 
@@ -196,48 +198,46 @@ $(function () {
 
     // youtube end------------------------------------------------------------
 
+    // 대여하기----------------------------------------------------------------
     // 이용 방법------------------------------------------------------------
     // lcd
-    $(function () {
-        const $lendListLcd = $(".lend-list-lcd");
 
-        $lendListLcd.on("mouseenter", "li", function () {
-            const $hoveredItem = $(this);
-            const $allItems = $lendListLcd.find("li");
+    const $lendListLcd = $(".lend-list-lcd");
 
-            // 모든 li에서 'on' 클래스 제거
-            $allItems.removeClass("on");
+    $lendListLcd.on("mouseenter", "li", function () {
+        const $hoveredItem = $(this);
+        const $allItems = $lendListLcd.find("li");
 
-            // 마우스가 올라간 li에 'on' 클래스 추가
-            $hoveredItem.addClass("on");
-        });
+        // 모든 li에서 'on' 클래스 제거
+        $allItems.removeClass("on");
 
-        $lendListLcd.on("mouseleave", function () {
-            // 마우스가 영역을 벗어나면 모든 li에서 'on' 클래스 제거
-            $lendListLcd.find("li").removeClass("on");
-        });
+        // 마우스가 올라간 li에 'on' 클래스 추가
+        $hoveredItem.addClass("on");
+    });
+
+    $lendListLcd.on("mouseleave", function () {
+        // 마우스가 영역을 벗어나면 모든 li에서 'on' 클래스 제거
+        $lendListLcd.find("li").removeClass("on");
     });
     // lcd end
 
     // qr
-    $(function () {
-        const $lendListQr = $(".lend-list-qr");
+    const $lendListQr = $(".lend-list-qr");
 
-        $lendListQr.on("mouseenter", "li", function () {
-            const $hoveredItem = $(this);
-            const $allItems = $lendListQr.find("li");
+    $lendListQr.on("mouseenter", "li", function () {
+        const $hoveredItem = $(this);
+        const $allItems = $lendListQr.find("li");
 
-            // 모든 li에서 'on' 클래스 제거
-            $allItems.removeClass("on");
+        // 모든 li에서 'on' 클래스 제거
+        $allItems.removeClass("on");
 
-            // 마우스가 올라간 li에 'on' 클래스 추가
-            $hoveredItem.addClass("on");
-        });
+        // 마우스가 올라간 li에 'on' 클래스 추가
+        $hoveredItem.addClass("on");
+    });
 
-        $lendListQr.on("mouseleave", function () {
-            // 마우스가 영역을 벗어나면 모든 li에서 'on' 클래스 제거
-            $lendListQr.find("li").removeClass("on");
-        });
+    $lendListQr.on("mouseleave", function () {
+        // 마우스가 영역을 벗어나면 모든 li에서 'on' 클래스 제��
+        $lendListQr.find("li").removeClass("on");
     });
     // qr end
 
@@ -299,6 +299,7 @@ $(function () {
     });
 
     // question end------------------------------------------------------------
+    // 대여하기 end----------------------------------------------------------------
 
     // 모바일 더보기
     const btnMenu = document.querySelector(".more-btn");
@@ -309,10 +310,28 @@ $(function () {
         mobileMenu.classList.add("active");
     });
 
-    // ��상 .classList.remove('클래스명)//
-
     btnClose.addEventListener("click", () => {
         mobileMenu.classList.remove("active");
     });
     // 모바일 더보기 end
+
+    // 이용하기
+
+    // 이용하기end
+
+    // 이벤트
+    const courseSwiper = new Swiper(".course-list", {
+        speed: 1000,
+        loop: true,
+        slidesPerView: 6,
+
+        autoplay: {
+            delay: 2000,
+        },
+
+        navigation: {
+            nextEl: ".course-button-next",
+            prevEl: ".course-button-prev",
+        },
+    });
 });
