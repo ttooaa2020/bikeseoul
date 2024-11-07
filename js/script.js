@@ -198,7 +198,7 @@ $(function () {
 
     // youtube end------------------------------------------------------------
 
-    // 대여하기----------------------------------------------------------------
+    // 대여여하기----------------------------------------------------------------
     // 이용 방법------------------------------------------------------------
     // lcd
 
@@ -236,7 +236,7 @@ $(function () {
     });
 
     $lendListQr.on("mouseleave", function () {
-        // 마우스가 영역을 벗어나면 모든 li에서 'on' 클래스 제��
+        // 마우스가 영역을 벗어나면 모든 li에서 'on' 클래스 제
         $lendListQr.find("li").removeClass("on");
     });
     // qr end
@@ -316,8 +316,58 @@ $(function () {
     // 모바일 더보기 end
 
     // 이용하기
+    gsap.registerPlugin(ScrollTrigger);
 
+    const accidentItems = document.querySelectorAll(".accident-list li"); // accident-list의 각 li 요소 선택
+
+    // accident-title1 영역 핀 설정
+    ScrollTrigger.create({
+        trigger: ".accident-title1", // 핀할 요소를 accident-title1으로 설정
+        start: "top 30%", // 뷰포트의 상단에 도달할 때
+        end: "bottom 60% +=2400", // 1000px 스크롤 후 핀 해제
+        pin: true, // 핀 고정
+        // markers: true, // 디버깅을 위한 마커 표시
+    });
+
+    accidentItems.forEach((item) => {
+        ScrollTrigger.create({
+            trigger: item, // 각 아이템을 트리거로 설정
+            // markers: true,
+            start: "top 30%", // 아이템의 상단이 뷰포트의 30%에 도달할 때
+            end: "bottom 30%", // 아이템의 하단이 뷰포트의 30%에 도달할 때
+            onEnter: () => item.classList.add("on"), // 들어올 때 on 클래스 추가
+            onLeave: () => item.classList.remove("on"), // 나갈 때 on 클래스 제거
+            onEnterBack: () => item.classList.add("on"), // 다시 들어올 때 on 클래스 추가
+            onLeaveBack: () => item.classList.remove("on"), // 다시 나갈 때 on 클래스 제거
+        });
+    });
+
+    const review = new Swiper(".review-all-1", {
+        speed: 2000,
+        loop: true,
+        slidesPerView: 4,
+        spaceBetween: 60,
+
+        autoplay: {
+            delay: 0,
+        },
+    });
+
+    const reviewAll = new Swiper(".review-all-2", {
+        speed: 2000,
+        loop: true,
+        slidesPerView: 4,
+        spaceBetween: 60,
+
+        autoplay: {
+            delay: 0,
+            reverseDirection: true, // 슬라이드 방향을 왼쪽으로 설정
+        },
+    });
     // 이용하기end
+
+    // 맵
+    // 맵 end
 
     // 이벤트
     const courseSwiper = new Swiper(".course-list", {
