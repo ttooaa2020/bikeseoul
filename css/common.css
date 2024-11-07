@@ -30,6 +30,7 @@ body {
     text-transform: capitalize;
     word-break: keep-all;
     overflow-x: hidden;
+
     min-width: 36rem;
     background: var(--Light-100);
 }

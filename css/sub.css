@@ -674,6 +674,11 @@
 }
 
 @media (max-width: 500px) {
+    .time-list li {
+        width: 18.5rem;
+        height: 16.1rem;
+    }
+
     .time-list li::after {
         bottom: 0.5rem;
     }

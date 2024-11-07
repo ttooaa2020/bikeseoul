@@ -6,7 +6,7 @@
     padding: 11.1rem 0 17.4rem;
 }
 
-.iframe-all iframe {
+.iframe-all.on iframe {
     width: 113.6rem;
     height: 85.6rem;
     border-radius: 4rem;

@@ -44,7 +44,19 @@ $(function () {
     });
     // 탑 버튼 클릭 이벤트
     $topBtn.on("click", function () {
-        $("html, body").animate({ scrollTop: 0 }, 100);
+        $("html, body").animate({ scrollTop: 0 }, 100, function () {
+            $header.removeClass("hide"); //탑버튼 누를시 헤더가 나옴
+        });
+    });
+
+    // 키보드에 홈 버튼을 눌렀을때도 헤더가 내려옴
+    $(document).on("keydown", function (e) {
+        if (e.key === "Home") {
+            // Home 키가 눌렸을 때
+            $("html, body").animate({ scrollTop: 0 }, 100, function () {
+                $header.removeClass("hide"); // 헤더를 보이게 함
+            });
+        }
     });
     // 헤더, 탑버튼이 비주얼을 벗어 나갈때------------------------------------------------------------
 
@@ -324,15 +336,15 @@ $(function () {
     ScrollTrigger.create({
         trigger: ".accident-title1", // 핀할 요소를 accident-title1으로 설정
         start: "top 30%", // 뷰포트의 상단에 도달할 때
-        end: "bottom 60% +=2400", // 1000px 스크롤 후 핀 해제
+        end: "bottom  70%",
         pin: true, // 핀 고정
-        // markers: true, // 디버깅을 위한 마커 표시
+        markers: true, // 디버깅을 위한 마커 표시
     });
 
     accidentItems.forEach((item) => {
         ScrollTrigger.create({
             trigger: item, // 각 아이템을 트리거로 설정
-            // markers: true,
+            markers: true,
             start: "top 30%", // 아이템의 상단이 뷰포트의 30%에 도달할 때
             end: "bottom 30%", // 아이템의 하단이 뷰포트의 30%에 도달할 때
             onEnter: () => item.classList.add("on"), // 들어올 때 on 클래스 추가
@@ -367,6 +379,7 @@ $(function () {
     // 이용하기end
 
     // 맵
+
     // 맵 end
 
     // 이벤트

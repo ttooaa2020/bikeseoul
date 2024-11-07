@@ -43,6 +43,10 @@ h3 {
     animation: visual 0.7s ease-out forwards;
 }
 
+.visual figure {
+    height: 100%;
+}
+
 .visual-text {
     position: absolute;
     top: 55%;
