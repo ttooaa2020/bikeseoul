@@ -9,13 +9,13 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./css/common.css" />
-        <link rel="stylesheet" href="./css/use.css" />
+        <link rel="stylesheet" href="./css/map.css" />
         <link rel="stylesheet" href="./css/sub-common.css" />
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="./js/jquery-3.7.1.min.js"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
         <script src="./js/jquery-3.7.1.min.js"></script>
 
         <script src="./js/script.js" defer></script>
@@ -34,20 +34,14 @@
         <!-- Open Graph 메타 태그 (SNS 최적화) -->
         <meta property="og:type" content="website" />
         <meta property="og:title" content="서울시 공공 자전거 따릉이 - 서울 어디서나 자전거 대여 가능!" />
-        <meta
-            property="og:description"
-            content="서울의 공공 자전거 서비스 따릉이로 편리하게 자전거를 대여하고 환경도 보호하세요."
-        />
+        <meta property="og:description" content="서울의 공공 자전거 서비스 따릉이로 편리하게 자전거를 대여하고 환경도 보호하세요." />
         <meta property="og:url" content="https://ttooaa2020.github.io/bikeseoul/" />
         <meta property="og:image" content="https://www.bikeseoul.com/img/main/main_visual.png" />
 
         <!-- Twitter Card 메타 태그 -->
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="서울시 공공 자전거 따릉이 - 서울 어디서나 자전거 대여 가능!" />
-        <meta
-            name="twitter:description"
-            content="따릉이와 함께하는 스마트한 서울 생활! 누구나 쉽고 편리하게 이용할 수 있는 저탄소 이동수단 서울 자전거."
-        />
+        <meta name="twitter:description" content="따릉이와 함께하는 스마트한 서울 생활! 누구나 쉽고 편리하게 이용할 수 있는 저탄소 이동수단 서울 자전거." />
         <meta name="twitter:image" content="https://www.bikeseoul.com/img/main/main_visual.png" />
     </head>
     <body>
@@ -113,7 +107,7 @@
                 <div class="inner">
                     <div class="map-all">
                         <div class="iframe-all">
-                            <div class="map-1">
+                            <div class="map-iframe">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1581.1436169811998!2d126.98481682687994!3d37.57185349758099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2e75d4a7c41%3A0xe322a75aaf9b71fc!2z7ZWY7J2066-465SU7Ja07Lu07ZOo7YSw7ZWZ7JuQIOyiheuhnOy6oO2NvOyKpA!5e0!3m2!1sko!2skr!4v1730823672970!5m2!1sko!2skr"
                                     allowfullscreen=""
@@ -122,7 +116,7 @@
                                 ></iframe>
                             </div>
 
-                            <div class="map-2">
+                            <div class="map-iframe">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d940.1689360047608!2d126.98834566255594!3d37.57064016612733!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2e796ca91b7%3A0x70ff69e12252e31c!2z7YOR6rOo6rO17JuQ!5e0!3m2!1sko!2skr!4v1730862261828!5m2!1sko!2skr"
                                     allowfullscreen=""
@@ -131,7 +125,7 @@
                                 ></iframe>
                             </div>
 
-                            <div class="map-3">
+                            <div class="map-iframe">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d665.0604730897996!2d126.83995079805327!3d37.54143007303331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9c4f460c32b7%3A0x68979fc65f1d6963!2z7ZmU6rOh7Jet!5e0!3m2!1sko!2skr!4v1730862294908!5m2!1sko!2skr"
                                     allowfullscreen=""
@@ -152,21 +146,21 @@
                                     <button class="near">가까운 위치</button>
                                     <button class="star"><i class="hidden">즐겨찾기</i></button>
                                 </div>
-                                <div class="map-con-1">
+                                <div class="map-con map-con1">
                                     <figure><img src="./img/map-con.png" alt="#" /></figure>
                                     <dl class="map-text">
                                         <dt>327. 낙원상가 옆</dt>
                                         <dd>서울 종로구 낙원동 종로3가역 5번 출구에서 205m</dd>
                                     </dl>
                                 </div>
-                                <div class="map-con-2">
+                                <div class="map-con map-con2">
                                     <figure><img src="./img/map-con-2.png" alt="#" /></figure>
                                     <dl class="map-text">
                                         <dt>328. 탑골공원 앞</dt>
                                         <dd>종로3가역 1번 출구에서 278m</dd>
                                     </dl>
                                 </div>
-                                <div class="map-con-3">
+                                <div class="map-con map-con3">
                                     <figure><img src="./img/map-con-3.png" alt="#" /></figure>
                                     <dl class="map-text">
                                         <dt>1128. 화곡역 6번출구</dt>
@@ -174,7 +168,9 @@
                                     </dl>
                                 </div>
                             </div>
-                            <button class="cos-btn">근처 코스 보러가기</button>
+                            <a href="" class="cos-btn btn-1">근처 코스 보러가기</a>
+                            <a href="" class="cos-btn btn-2">근처 코스 보러가기</a>
+                            <a href="" class="cos-btn btn-3">근처 코스 보러가기</a>
                         </div>
                     </div>
                 </div>
@@ -214,10 +210,7 @@
                         <div class="foot-con">
                             <address>
                                 <p>서울특별시 중구 세종대로 110 서울특별시</p>
-                                <p>
-                                    대표자 오세훈, Tel : 1599-0120(365일, 24시간) (사업자등록번호 : 104-83-00469)
-                                    우편번호 04524
-                                </p>
+                                <p>대표자 오세훈, Tel : 1599-0120(365일, 24시간) (사업자등록번호 : 104-83-00469) 우편번호 04524</p>
                                 <p>COPYRIGHT ⓒ 2018 bikeseoul All RIGHTS RESERVED.</p>
                             </address>
                         </div>

@@ -14,6 +14,8 @@
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
         <script src="./js/jquery-3.7.1.min.js"></script>
 
         <script src="./js/script.js"></script>
@@ -32,20 +34,14 @@
         <!-- Open Graph 메타 태그 (SNS 최적화) -->
         <meta property="og:type" content="website" />
         <meta property="og:title" content="서울시 공공 자전거 따릉이 - 서울 어디서나 자전거 대여 가능!" />
-        <meta
-            property="og:description"
-            content="서울의 공공 자전거 서비스 따릉이로 편리하게 자전거를 대여하고 환경도 보호하세요."
-        />
+        <meta property="og:description" content="서울의 공공 자전거 서비스 따릉이로 편리하게 자전거를 대여하고 환경도 보호하세요." />
         <meta property="og:url" content="https://ttooaa2020.github.io/bikeseoul/" />
         <meta property="og:image" content="https://www.bikeseoul.com/img/main/main_visual.png" />
 
         <!-- Twitter Card 메타 태그 -->
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="서울시 공공 자전거 따릉이 - 서울 어디서나 자전거 대여 가능!" />
-        <meta
-            name="twitter:description"
-            content="따릉이와 함께하는 스마트한 서울 생활! 누구나 쉽고 편리하게 이용할 수 있는 저탄소 이동수단 서울 자전거."
-        />
+        <meta name="twitter:description" content="따릉이와 함께하는 스마트한 서울 생활! 누구나 쉽고 편리하게 이용할 수 있는 저탄소 이동수단 서울 자전거." />
         <meta name="twitter:image" content="https://www.bikeseoul.com/img/main/main_visual.png" />
     </head>
     <body>
@@ -126,8 +122,7 @@
                                 <strong>따릉이</strong>
                                 <p>
                                     기존의 따릉이로 LCD단말기를 <br />이용하여 대여하는 방식의 따릉이 입니다.<br />
-                                    기존 따릉이는 기존 대여소에서 반납이 가능하며 <br />신규 대여소에서는 반납이
-                                    불가능하다.
+                                    기존 따릉이는 기존 대여소에서 반납이 가능하며 <br />신규 대여소에서는 반납이 불가능하다.
                                 </p>
                             </div>
                         </li>
@@ -152,9 +147,7 @@
                     <ul class="time-list">
                         <li data-aos="fade-up" data-aos-delay="100">1회 1매씩 <br />구매가 가능합니다.</li>
                         <li data-aos="fade-up" data-aos-delay="200">대여시간은 <br />1시간입니다.</li>
-                        <li data-aos="fade-up" data-aos-delay="300">
-                            초과시 5분마다 <br />추가요금 200원 <br />과금됩니다.
-                        </li>
+                        <li data-aos="fade-up" data-aos-delay="300">초과시 5분마다 <br />추가요금 200원 <br />과금됩니다.</li>
                         <li data-aos="fade-up" data-aos-delay="400">
                             추가 요금은 <br />이용권 결제수단으로<br />
                             자동결제 됩니다.
@@ -165,9 +158,7 @@
 
             <section class="lend">
                 <div class="inner">
-                    <h3 class="lend-title" data-aos="fade-up" data-aos-delay="100" data-aos-offset="300">
-                        따릉이의 대여 철차
-                    </h3>
+                    <h3 class="lend-title" data-aos="fade-up" data-aos-delay="100" data-aos-offset="300">따릉이의 대여 철차</h3>
                     <div class="lend-tab">
                         <div class="lend-tabmenu" data-aos="fade-up" data-aos-delay="200">
                             <button>LCD형</button>
@@ -184,9 +175,7 @@
                                                     설정에서 블루투스와 <br />GPS(위치정보)를 켠 후,<br />
                                                     앱의 지도 기능을 활용하여
                                                 </p>
-                                                <p>
-                                                    현재 위치 주변에 있는 가까운 대여소를 <br />쉽게 찾아볼 수 있습니다.
-                                                </p>
+                                                <p>현재 위치 주변에 있는 가까운 대여소를 <br />쉽게 찾아볼 수 있습니다.</p>
                                             </div>
                                         </div>
                                     </li>
@@ -198,10 +187,7 @@
                                                     따릉이앱에서 대여 비밀번호 설정으로 <br />
                                                     비번을 정해 입력해주세요.
                                                 </p>
-                                                <p>
-                                                    이 비밀번호는 1~4까지의 4자리 <br />숫자가 있습니다. 필요하다면
-                                                    <br />수시로 변경이 가능합니다.
-                                                </p>
+                                                <p>이 비밀번호는 1~4까지의 4자리 <br />숫자가 있습니다. 필요하다면 <br />수시로 변경이 가능합니다.</p>
                                             </div>
                                         </div>
                                     </li>
@@ -209,13 +195,9 @@
                                         <div class="lend-text">
                                             <strong>자전거 단말기</strong>
                                             <div class="text-wrap">
+                                                <p>1분 안에 LCD아래에 홈버튼을 2초 정도 <br />누른뒤 대여 비밀번호를 눌러 주세요.</p>
                                                 <p>
-                                                    1분 안에 LCD아래에 홈버튼을 2초 정도 <br />누른뒤 대여 비밀번호를
-                                                    눌러 주세요.
-                                                </p>
-                                                <p>
-                                                    만약 대여번호를 설정하지 않았을 경우 <br />앱 화면 안내의 '대여
-                                                    비밀번호 설정'으로<br />
+                                                    만약 대여번호를 설정하지 않았을 경우 <br />앱 화면 안내의 '대여 비밀번호 설정'으로<br />
                                                     변경 해주시면 됩니다.
                                                 </p>
                                             </div>
@@ -225,10 +207,7 @@
                                         <div class="lend-text">
                                             <strong>연결장치 분리</strong>
                                             <div class="text-wrap">
-                                                <p>
-                                                    대여 비밀번호를 누른 후 <br />단말기 오른쪽 하단의 튀어나온
-                                                    <br />잠금장치를 뽑아주세요.
-                                                </p>
+                                                <p>대여 비밀번호를 누른 후 <br />단말기 오른쪽 하단의 튀어나온 <br />잠금장치를 뽑아주세요.</p>
                                                 <p>
                                                     반납시에도 원래 잠금장치가<br />
                                                     있던곳에 다시 끼워주세요.
@@ -248,9 +227,7 @@
                                                     설정에서 블루투스와 <br />GPS(위치정보)를 켠 후,<br />
                                                     앱의 지도 기능을 활용하여
                                                 </p>
-                                                <p>
-                                                    현재 위치 주변에 있는 가까운 대여소를 <br />쉽게 찾아볼 수 있습니다.
-                                                </p>
+                                                <p>현재 위치 주변에 있는 가까운 대여소를 <br />쉽게 찾아볼 수 있습니다.</p>
                                             </div>
                                         </div>
                                     </li>
@@ -283,9 +260,7 @@
                                                     잠금장치를 당기면 앱 화면에<br />
                                                     임시 잠금 메세지가 나타납니다.
                                                 </p>
-                                                <p>
-                                                    임시 잠금을 해체하려면 앱에서 <br />임시잠금 해체 버튼을 누르세요.
-                                                </p>
+                                                <p>임시 잠금을 해체하려면 앱에서 <br />임시잠금 해체 버튼을 누르세요.</p>
                                             </div>
                                         </div>
                                     </li>
@@ -298,35 +273,28 @@
 
             <section class="question">
                 <div class="inner">
-                    <h4 class="question-title" data-aos="fade-up" data-aos-delay="0" data-aos-offset="-100">
-                        자주 묻는 질문
-                    </h4>
+                    <h4 class="question-title" data-aos="fade-up" data-aos-delay="0" data-aos-offset="-100">자주 묻는 질문</h4>
                     <!-- ul.question-list>li*4>strong+.answer-wrap>p -->
                     <ul class="question-list">
                         <li data-aos="fade-up" data-aos-delay="100" data-aos-offset="-200">
                             <strong>따릉이를 대여한 곳에만 반납해야 하나요?</strong>
                             <div class="answer-wrap">
                                 <p>
-                                    ○ 대여하신 곳과 상관없이 가까운 따릉이 전용 대여소에 반납하시면 됩니다. 다만, 따릉이
-                                    전용대여소가 아닌곳에 자전거를 잠금하는 것(임시잠금 등)은 정상적인 반납이 아니며,
-                                    “이용중”인 상태로서, 장기 방치시 추가요금이 발생합니다.
+                                    ○ 대여하신 곳과 상관없이 가까운 따릉이 전용 대여소에 반납하시면 됩니다. 다만, 따릉이 전용대여소가 아닌곳에 자전거를 잠금하는
+                                    것(임시잠금 등)은 정상적인 반납이 아니며, “이용중”인 상태로서, 장기 방치시 추가요금이 발생합니다.
                                 </p>
                                 <p>
-                                    ○ 가까운 대여소를 찾는 방법은 대여중 상태의 따릉이 앱에서 메인화면의 대여중 옆의 탭
-                                    "가까운 대여소" 를 눌러 확인 가능합니다.
+                                    ○ 가까운 대여소를 찾는 방법은 대여중 상태의 따릉이 앱에서 메인화면의 대여중 옆의 탭 "가까운 대여소" 를 눌러 확인 가능합니다.
                                 </p>
                             </div>
                         </li>
                         <li data-aos="fade-up" data-aos-delay="200" data-aos-offset="-300">
                             <strong>대여를 시도했는데 자전거 잠금장치가 해제되지 않습니다.</strong>
                             <div class="answer-wrap">
+                                <p>○ 따릉이 단말기 고장 또는 통신상태에 일시 장애가 있는 경우 잠금장치가 해제되지 않을 수 있습니다.</p>
                                 <p>
-                                    ○ 따릉이 단말기 고장 또는 통신상태에 일시 장애가 있는 경우 잠금장치가 해제되지 않을
-                                    수 있습니다.
-                                </p>
-                                <p>
-                                    ○ 전산상으로 대여 완료되었음에도 불구하고 잠금장치가 분리되지 않는 경우는
-                                    콜센터(1599-0120)로 연락주시면 조치하도록 하겠습니다.
+                                    ○ 전산상으로 대여 완료되었음에도 불구하고 잠금장치가 분리되지 않는 경우는 콜센터(1599-0120)로 연락주시면 조치하도록
+                                    하겠습니다.
                                 </p>
                             </div>
                         </li>
@@ -334,14 +302,13 @@
                             <strong>추가요금은 무엇이며 어떻게 결제하나요?</strong>
                             <div class="answer-wrap">
                                 <p>
-                                    ○ 따릉이는 공공자전거로서 특정 이용자의 장시간 독점적인 이용을 막고 더 많은 사람들이
-                                    자주 이용할 수 있도록, 1회 대여시 기본대여시간(1시간/2시간)을 설정하여 운영하고
-                                    있습니다.
+                                    ○ 따릉이는 공공자전거로서 특정 이용자의 장시간 독점적인 이용을 막고 더 많은 사람들이 자주 이용할 수 있도록, 1회 대여시
+                                    기본대여시간(1시간/2시간)을 설정하여 운영하고 있습니다.
                                 </p>
                                 <p>
-                                    ○ 기본대여시간 내에 자전거를 반납하지 못하면, 초과 이용시간에 따라 추가요금이 별도로
-                                    부과됩니다. 추가요금이 부과되지 않도록, 기본대여시간 내에 대여소에 반납한 후 다시
-                                    대여해주시기 바랍니다. - 추가요금은 기본 대여시간 초과시 5분당 200원이 부과되됩니다.
+                                    ○ 기본대여시간 내에 자전거를 반납하지 못하면, 초과 이용시간에 따라 추가요금이 별도로 부과됩니다. 추가요금이 부과되지 않도록,
+                                    기본대여시간 내에 대여소에 반납한 후 다시 대여해주시기 바랍니다. - 추가요금은 기본 대여시간 초과시 5분당 200원이
+                                    부과되됩니다.
                                 </p>
                             </div>
                         </li>
@@ -349,15 +316,13 @@
                             <strong>공공자전거 이용중 사고가 났는데 어떻게 해야 하나요?</strong>
                             <div class="answer-wrap">
                                 <p>
-                                    ○ 따릉이 이용중 사고가 났을 경우, 공공자전거 종합보험에 의거 처리되며, 보험접수는
-                                    이용자 본인이 직접 보험사에 접수해야 합니다. - 접수처 : DB손해보험(02-1899-7751) -
-                                    보험사 영업시간 : 09:00~18:00(토요일 및 공휴일 휴무)
+                                    ○ 따릉이 이용중 사고가 났을 경우, 공공자전거 종합보험에 의거 처리되며, 보험접수는 이용자 본인이 직접 보험사에 접수해야
+                                    합니다. - 접수처 : DB손해보험(02-1899-7751) - 보험사 영업시간 : 09:00~18:00(토요일 및 공휴일 휴무)
                                 </p>
                                 <p>○보험사 안내 관련 문의 : 따릉이 콜센터(1599-0120/24시간 운영)</p>
                                 <p>
-                                    ※ 보장 내용 및 보장 한도액, 보험금 지급사유별 첨부서류 등 보다 자세한 내용은
-                                    홈페이지 (하단 보험안내), 앱(메뉴 > 상단 톱니바퀴(설정) > 보험안내)을 참조하여
-                                    주시기 바랍니다.
+                                    ※ 보장 내용 및 보장 한도액, 보험금 지급사유별 첨부서류 등 보다 자세한 내용은 홈페이지 (하단 보험안내), 앱(메뉴 > 상단
+                                    톱니바퀴(설정) > 보험안내)을 참조하여 주시기 바랍니다.
                                 </p>
                             </div>
                         </li>
@@ -399,10 +364,7 @@
                         <div class="foot-con">
                             <address>
                                 <p>서울특별시 중구 세종대로 110 서울특별시</p>
-                                <p>
-                                    대표자 오세훈, Tel : 1599-0120(365일, 24시간) (사업자등록번호 : 104-83-00469)
-                                    우편번호 04524
-                                </p>
+                                <p>대표자 오세훈, Tel : 1599-0120(365일, 24시간) (사업자등록번호 : 104-83-00469) 우편번호 04524</p>
                                 <p>COPYRIGHT ⓒ 2018 bikeseoul All RIGHTS RESERVED.</p>
                             </address>
                         </div>
