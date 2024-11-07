@@ -379,35 +379,35 @@ $(function () {
     const $mapCon = $(".map-con");
     const $mapIframe = $(".map-iframe"); // 모든 map-iframe 요소 선택
 
-    //     // map 버튼 클릭 시 동작
-    //     $mapBtn.on("click", function (e) {
-    //         // 기본 동작 막기
-    //         e.preventDefault();
-    //
-    //         // 선택한 버튼의 인덱스 구하기
-    //         const tabIdx = $(this).index();
-    //
-    //         // 모든 map-con 숨기기
-    //         $mapCon.removeClass("active").hide();
-    //         $mapIframe.hide(); // 모든 map-iframe 요소 숨기기
-    //
-    //         // 모든 mapBtn에서 .on 클래스 제거
-    //         $mapBtn.removeClass("on");
-    //
-    //         // 클릭한 mapBtn에 .on 클래스 추가
-    //         $(this).addClass("on");
-    //
-    //         // 인덱스에 해당하는 map-con 보이기
-    //         $mapCon.eq(tabIdx).addClass("active").show();
-    //         $mapIframe.eq(tabIdx).show(); // 해당하는 map-iframe 보이기
-    //     });
-    //
-    //     // 기본적으로 첫 번째 map-con 보이기
-    //     $mapCon.hide(); // 모든 map-con 숨김
-    //     $mapCon.eq(0).addClass("active").show(); // 첫 번째 map-con 보이기
-    //     $mapIframe.hide(); // 모든 map-iframe 요소 숨김
-    //     $mapIframe.eq(0).show(); // 첫 번째 map-iframe 보이기
-    //     $mapBtn.eq(0).addClass("on"); // 첫 번째 버튼에 .on 클래스 추가
+    // map 버튼 클릭 시 동작
+    $mapBtn.on("click", function (e) {
+        // 기본 동작 막기
+        e.preventDefault();
+
+        // 선택한 버튼의 인덱스 구하기
+        const tabIdx = $(this).index();
+
+        // 모든 map-con 숨기기
+        $mapCon.removeClass("active").hide();
+        $mapIframe.hide(); // 모든 map-iframe 요소 숨기기
+
+        // 모든 mapBtn에서 .on 클래스 제거
+        $mapBtn.removeClass("on");
+
+        // 클릭한 mapBtn에 .on 클래스 추가
+        $(this).addClass("on");
+
+        // 인덱스에 해당하는 map-con 보이기
+        $mapCon.eq(tabIdx).addClass("active").show();
+        $mapIframe.eq(tabIdx).show(); // 해당하는 map-iframe 보이기
+    });
+
+    // 기본적으로 첫 번째 map-con 보이기
+    $mapCon.hide(); // 모든 map-con 숨김
+    $mapCon.eq(0).addClass("active").show(); // 첫 번째 map-con 보이기
+    $mapIframe.hide(); // 모든 map-iframe 요소 숨김
+    $mapIframe.eq(0).show(); // 첫 번째 map-iframe 보이기
+    $mapBtn.eq(0).addClass("on"); // 첫 번째 버튼에 .on 클래스 추가
     // 맵 end
 
     // 이벤트
