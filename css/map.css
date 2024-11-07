@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* map */
+.map-all {
+    display: flex;
+    padding: 11.1rem 0 17.4rem;
+}
+
+.iframe-all iframe {
+    width: 113.6rem;
+    height: 85.6rem;
+    border-radius: 4rem;
+}
+
+.controller {
+    width: 36.5rem;
+    height: 85.6rem;
+    border-radius: 4rem;
+    padding: 8.4rem 2.3rem 0 2.3rem;
+
+    background: var(--main-color3);
+}
+
+.map-con {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 2.2rem;
+}
+
+.map-con figure {
+    width: 31.5rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.map-text {
+    color: var(--Light-100);
+}
+
+.map-text dt {
+    font-weight: 2.5rem;
+    font-weight: 700;
+}
+
+.map-text {
+    font-weight: 2rem;
+    font-weight: 400;
+}
+
+/* map end */
