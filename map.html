@@ -113,7 +113,7 @@
                 <div class="inner">
                     <div class="map-all">
                         <div class="iframe-all">
-                            <div class="map-iframe-1">
+                            <div class="map-iframe">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1581.1436169811998!2d126.98481682687994!3d37.57185349758099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2e75d4a7c41%3A0xe322a75aaf9b71fc!2z7ZWY7J2066-465SU7Ja07Lu07ZOo7YSw7ZWZ7JuQIOyiheuhnOy6oO2NvOyKpA!5e0!3m2!1sko!2skr!4v1730823672970!5m2!1sko!2skr"
                                     allowfullscreen=""
@@ -122,7 +122,7 @@
                                 ></iframe>
                             </div>
 
-                            <div class="map-iframe-2">
+                            <div class="map-iframe">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d940.1689360047608!2d126.98834566255594!3d37.57064016612733!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2e796ca91b7%3A0x70ff69e12252e31c!2z7YOR6rOo6rO17JuQ!5e0!3m2!1sko!2skr!4v1730862261828!5m2!1sko!2skr"
                                     allowfullscreen=""
@@ -131,7 +131,7 @@
                                 ></iframe>
                             </div>
 
-                            <div class="map-iframe-2">
+                            <div class="map-iframe">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d665.0604730897996!2d126.83995079805327!3d37.54143007303331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9c4f460c32b7%3A0x68979fc65f1d6963!2z7ZmU6rOh7Jet!5e0!3m2!1sko!2skr!4v1730862294908!5m2!1sko!2skr"
                                     allowfullscreen=""
@@ -143,42 +143,54 @@
                         <div class="controller">
                             <div class="controller-input">
                                 <input type="text" placeholder="검색어를 입력하세요" id="searchInput" />
-                                <button type="button">검색</button>
+                                <button class="controller-button" type="button">검색</button> <input />
                             </div>
 
                             <div class="map-contents">
                                 <div class="map-btn">
-                                    <button class="now">현재 위치</button>
-                                    <button class="near">가까운 위치</button>
-                                    <button class="star">
-                                        <i class="hidden">즐겨찾기</i>
-                                    </button>
+                                    <a href="#" class="now">현재위치</a>
+                                    <a href="#" class="near">가까운위치</a>
+                                    <a href="#" class="star"><i class="hidden">즐겨찾기</i></a>
+                                </div>
+
+                                <div class="map-con">
+                                    <figure><img src="./img/map-con.png" alt="#" /></figure>
+                                    <dl class="map-text">
+                                        <dt>327. 낙원상가 옆</dt>
+                                        <dd>서울 종로구 낙원동 종로3가역 5번 출구에서 205m</dd>
+                                    </dl>
+
+                                    <a
+                                        class="cos-btn"
+                                        href="https://www.sisul.or.kr/open_content/traffic/bike_course/view.html?id=20"
+                                        >근처 코스 보러가기</a
+                                    >
                                 </div>
                                 <div class="map-con">
-                                    <div class="map-con1">
-                                        <figure><img src="./img/map-con.png" alt="#" /></figure>
-                                        <dl class="map-text">
-                                            <dt>327. 낙원상가 옆</dt>
-                                            <dd>서울 종로구 낙원동 종로3가역 5번 출구에서 205m</dd>
-                                        </dl>
-                                        <a href="" class="cos-btn btn-1">근처 코스 보러가기</a>
-                                    </div>
-                                    <div class="map-con2">
+                                    <div class="map-itme">
                                         <figure><img src="./img/map-con-2.png" alt="#" /></figure>
                                         <dl class="map-text">
                                             <dt>328. 탑골공원 앞</dt>
                                             <dd>종로3가역 1번 출구에서 278m</dd>
                                         </dl>
-                                        <a href="" class="cos-btn btn-2">근처 코스 보러가기</a>
                                     </div>
-                                    <div class="map-con3">
-                                        <figure><img src="./img/map-con-3.png" alt="#" /></figure>
-                                        <dl class="map-text">
-                                            <dt>1128. 화곡역 6번출구</dt>
-                                            <dd>화곡역 6번 출구에서 24m</dd>
-                                            <a href="" class="cos-btn btn-3">근처 코스 보러가기</a>
-                                        </dl>
-                                    </div>
+                                    <a
+                                        class="cos-btn"
+                                        href="https://www.sisul.or.kr/open_content/traffic/bike_course/view.html?id=20"
+                                        >근처 코스 보러가기</a
+                                    >
+                                </div>
+                                <div class="map-con">
+                                    <figure><img src="./img/map-con-3.png" alt="#" /></figure>
+                                    <dl class="map-text">
+                                        <dt>1128. 화곡역 6번출구</dt>
+                                        <dd>화곡역 6번 출구에서 24m</dd>
+                                        <a
+                                            class="cos-btn"
+                                            href="https://www.sisul.or.kr/open_content/traffic/bike_course/view.html?id=5"
+                                            >근처 코스 보러가기</a
+                                        >
+                                    </dl>
                                 </div>
                             </div>
                         </div>

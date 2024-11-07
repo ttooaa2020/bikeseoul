@@ -3,16 +3,21 @@
 /* map */
 .map-all {
     display: flex;
+    gap: 2rem;
+
     padding: 11.1rem 0 17.4rem;
 }
 
-.iframe-all.on iframe {
-    width: 113.6rem;
+.iframe-all iframe {
+    width: 113rem;
     height: 85.6rem;
     border-radius: 4rem;
 }
 
 .controller {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     width: 36.5rem;
     height: 85.6rem;
     border-radius: 4rem;
@@ -21,17 +26,75 @@
     background: var(--main-color3);
 }
 
+.controller {
+    position: relative;
+}
+
+input {
+    position: absolute;
+}
+
+.controller-button {
+    position: absolute;
+}
+
+.map-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.map-btn a {
+    display: block;
+    padding: 1rem 2.8rem;
+    width: 11.4rem;
+    height: 4.3rem;
+    border-radius: 10rem;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--Light-100);
+
+    background: var(--Darck-30);
+}
+
+.map-btn a:nth-child(3) {
+    display: block;
+    width: 4.3rem;
+    height: 4.3rem;
+    padding: 1.2rem 1.2rem;
+
+    border-radius: 100%;
+    background: var(--Darck-30) url(../img/controller-star.svg) no-repeat 50%;
+}
+
+.map-btn a.on {
+    color: var(--Light-100);
+    background: var(--main-color);
+}
+
+.map-btn a:nth-child(3).on {
+    background: var(--main-color) url(../img/controller-star.svg) no-repeat 50%;
+}
+
 .map-con {
     display: flex;
     flex-direction: column;
     align-items: left;
+
+    padding-top: 3rem;
     gap: 2.2rem;
 }
 
 .map-con figure {
-    width: 31.5rem;
+    width: 100%;
+    height: 15rem;
     border-radius: 2rem;
     overflow: hidden;
+}
+
+.map-con figure img {
+    width: 100%;
 }
 
 .map-text {
@@ -39,13 +102,40 @@
 }
 
 .map-text dt {
-    font-weight: 2.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
-.map-text {
-    font-weight: 2rem;
-    font-weight: 400;
+.map-text dd {
+    padding: 0.3rem 0 3rem;
+    font-size: 2rem;
+    font-weight: 300;
 }
 
+.cos-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10rem;
+
+    padding: 1.5rem 2rem;
+    background: var(--Darck-30);
+
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--Light-100);
+}
+
+.cos-btn::after {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background: url(../img/controller-arrow.svg) no-repeat 50%;
+}
+
+.cos-btn:hover {
+    background: var(--main-color);
+    color: var(--Light-100);
+}
 /* map end */
