@@ -351,7 +351,7 @@ $(function () {
     });
 
     const review = new Swiper(".review-all-1", {
-        speed: 2000,
+        speed: 5000,
         loop: true,
         slidesPerView: 4,
         spaceBetween: 60,
@@ -362,7 +362,7 @@ $(function () {
     });
 
     const reviewAll = new Swiper(".review-all-2", {
-        speed: 2000,
+        speed: 5000,
         loop: true,
         slidesPerView: 4,
         spaceBetween: 60,

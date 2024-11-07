@@ -3,8 +3,7 @@
 /* map */
 .map-all {
     display: flex;
-    gap: 2rem;
-
+    justify-content: space-between;
     padding: 11.1rem 0 17.4rem;
 }
 
@@ -26,22 +25,37 @@
     background: var(--main-color3);
 }
 
-.controller {
+.controller-input {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 input {
     position: absolute;
+    width: 100%;
+    height: 4.8rem;
+    border-radius: 10rem;
+    border: transparent;
 }
 
 .controller-button {
     position: absolute;
+    display: block;
+    right: 2rem;
+    z-index: 1;
+
+    width: 3rem;
+    height: 3rem;
+    background: url(../img/search.svg) no-repeat 50%;
 }
 
 .map-btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    padding-top: 3rem;
 }
 
 .map-btn a {
