@@ -48,7 +48,7 @@
 
 /* accident */
 .accident {
-    padding-top: 40rem;
+    padding: 30rem 0;
 }
 
 .accident-con {
@@ -56,10 +56,15 @@
     gap: 14.3rem;
 }
 
+.accident-title {
+    position: sticky;
+    top: 200px;
+    top: 15%;
+}
+
 .accident-title p {
     font-size: 2.5rem;
     font-weight: 700;
-
     color: var(--main-color);
 }
 
@@ -76,22 +81,16 @@
 .accident-list li {
     display: flex;
     gap: 2.4rem;
-
-    transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-.accident-list li.on {
-    opacity: 1;
-}
-
-.accident-list li.on figure {
+.accident-list li figure {
     width: 31.9rem;
     height: 49.7rem;
     border-radius: 3rem;
     overflow: hidden;
 }
 
-.accident-list li.on .list-text {
+.accident-list li .list-text {
     width: 53.5rem;
     padding: 6rem 4rem;
     border-radius: 3rem;
@@ -105,12 +104,6 @@
     border-radius: 3rem;
     overflow: hidden;
     position: relative;
-    opacity: 0.5;
-    transition: opacity 0.3s ease;
-}
-
-.accident-list li.on figure {
-    opacity: 1;
 }
 
 .list-text {

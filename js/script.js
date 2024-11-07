@@ -330,27 +330,23 @@ $(function () {
     // 이용하기
     gsap.registerPlugin(ScrollTrigger);
 
-    const accidentItems = document.querySelectorAll(".accident-list li"); // accident-list의 각 li 요소 선택
-
-    // accident-title1 영역 핀 설정
-    ScrollTrigger.create({
-        trigger: ".accident-title1", // 핀할 요소를 accident-title1으로 설정
-        start: "top 30%", // 뷰포트의 상단에 도달할 때
-        end: "bottom  70%",
-        pin: true, // 핀 고정
-        markers: true, // 디버깅을 위한 마커 표시
-    });
+    const accidentItems = gsap.utils.toArray(".accident-list li");
 
     accidentItems.forEach((item) => {
-        ScrollTrigger.create({
-            trigger: item, // 각 아이템을 트리거로 설정
-            markers: true,
-            start: "top 30%", // 아이템의 상단이 뷰포트의 30%에 도달할 때
-            end: "bottom 30%", // 아이템의 하단이 뷰포트의 30%에 도달할 때
-            onEnter: () => item.classList.add("on"), // 들어올 때 on 클래스 추가
-            onLeave: () => item.classList.remove("on"), // 나갈 때 on 클래스 제거
-            onEnterBack: () => item.classList.add("on"), // 다시 들어올 때 on 클래스 추가
-            onLeaveBack: () => item.classList.remove("on"), // 다시 나갈 때 on 클래스 제거
+        gsap.from(item, {
+            scrollTrigger: {
+                trigger: item,
+                // markers: true,
+                start: "top 50%",
+                end: "bottom 0%",
+                toggleActions: "play none reverse none",
+            },
+
+            y: 100,
+            autoAlpha: 0.5,
+            filter: "grayscale(1)",
+            duration: 1,
+            ease: "power4.out",
         });
     });
 
