@@ -494,13 +494,7 @@
 }
 /* question  end*/
 
-/* 0000 */
-
-@media (max-width: 1500px) {
-    .inner {
-        width: 90%;
-    }
-}
+/* 0000 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
 
 @media (max-width: 1300px) {
     .type-text {
@@ -532,18 +526,6 @@
 }
 
 @media (max-width: 890px) {
-    .visual {
-        height: 57.6rem;
-    }
-
-    .visual figure img {
-        height: 57.6rem;
-    }
-
-    .visual-text {
-        gap: 0.9rem;
-    }
-
     .type {
         padding-top: 10.6rem;
     }

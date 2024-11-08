@@ -4,13 +4,17 @@
 .map-all {
     display: flex;
     justify-content: space-between;
-    padding: 11.1rem 0 17.4rem;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+    padding: 11rem 0 17.4rem;
 }
 
 .iframe-all iframe {
     width: 113rem;
     height: 85.6rem;
     border-radius: 4rem;
+
+    /* flex: 1 1 max(30%); */
 }
 
 .controller {
@@ -22,6 +26,7 @@
     border-radius: 4rem;
     padding: 8.4rem 2.3rem 0 2.3rem;
 
+    /* flex: 1 1 max(30%); */
     background: var(--main-color3);
 }
 
@@ -39,6 +44,15 @@ input {
     border: transparent;
 }
 
+input::placeholder {
+    color: #999; /* 원하는 색상으로 변경 */
+    font-style: italic; /* 이탤릭체로 변경 */
+}
+
+#searchInput {
+    text-indent: 2rem; /* 입력된 텍스트의 시작 위치를 오른쪽으로 이동 */
+}
+
 .controller-button {
     position: absolute;
     display: block;
@@ -47,6 +61,7 @@ input {
 
     width: 3rem;
     height: 3rem;
+
     background: url(../img/search.svg) no-repeat 50%;
 }
 
