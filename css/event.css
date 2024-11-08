@@ -54,13 +54,13 @@
     /* transition: 0.4s; */
 }
 
-.sns-con li a {
+.sns-con a {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.sns-con li::before {
+.sns-con a::before {
     content: "";
     display: block;
     width: 5rem;
@@ -68,13 +68,13 @@
     border-radius: 100%;
 }
 
-.sns-con li:nth-child(1)::before {
+.sns-con li:nth-child(1) a::before {
     background: var(--main-color) url(../img/foot-icon-1.svg) no-repeat center/50%;
 }
-.sns-con li:nth-child(2)::before {
-    background: var(--main-color) url(../img/foot-icon-2.svg) no-repeat center/ 50%;
+.sns-con li:nth-child(2) a::before {
+    background: var(--main-color) url(../img/foot-icon-2.svg) no-repeat center/50%;
 }
-.sns-con li:nth-child(3)::before {
+.sns-con li:nth-child(3) a::before {
     background: var(--main-color) url(../img/foot-icon-3.svg) no-repeat center/50%;
 }
 

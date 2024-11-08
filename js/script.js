@@ -355,6 +355,7 @@ $(function () {
         loop: true,
         slidesPerView: 4,
         spaceBetween: 60,
+        autoplay: "auto",
 
         autoplay: {
             delay: 0,
@@ -366,6 +367,7 @@ $(function () {
         loop: true,
         slidesPerView: 4,
         spaceBetween: 60,
+        autoplay: "auto",
 
         autoplay: {
             delay: 0,
