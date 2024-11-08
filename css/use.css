@@ -54,7 +54,6 @@
 /* safety end */
 
 /* accident */
-/* 왼쪽이랑 오른쪽 넓이를 줘야함 그래야...응 부모값에 크기가 없던거임~  이상하게 반응형 값이 안들어간다면 부모에게 크기 값이 있는지 확인 하기*/
 .accident {
     padding-top: 30rem;
     padding-top: 15.625%;
@@ -110,17 +109,18 @@
     position: relative;
 
     width: 36.3326%;
+    height: 100%;
 }
 
 .accident-list li .list-text {
     width: 53.5rem;
-    padding: 6rem 4rem;
+    padding: 6rem 4rem 15rem;
     border-radius: 3rem;
     background: var(--main-color);
     color: var(--Light-100);
 
     width: 60.9339%;
-    padding: 6.8337% 4.5558%;
+    padding: 6.8337% 4.5558% 17.0842%;
 }
 
 .list-text {
@@ -207,7 +207,7 @@
 .review-item::before {
     content: "";
     display: block;
-    background: url(../img/star.svg) no-repeat 50%;
+    background: url(../img/star.svg) no-repeat 50% / 100%;
     width: 16.6rem;
     height: 2.6rem;
 }
@@ -229,3 +229,46 @@
     font-size: clamp(1rem, 1.0416vw, 2rem);
 }
 /* review end */
+
+@media (max-width: 1600px) {
+    .accident-list {
+        gap: 10rem;
+    }
+
+    .accident-list li figure {
+        border-radius: 2rem;
+    }
+
+    .accident-list li .list-text {
+        border-radius: 2rem;
+    }
+}
+
+@media (max-width: 1210px) {
+    .review-item {
+        height: 16.3rem;
+    }
+
+    .review-item::before {
+        width: 12.1rem;
+        height: 1.9rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .accident-con {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .accident-list {
+        width: 100%;
+    }
+
+    .accident-list li {
+        height: 21.1rem;
+    }
+}
+
+/* 왼쪽이랑 오른쪽 넓이를 줘야함 그래야...응 부모값에 크기가 없던거임~  이상하게 반응형 값이 안들어간다면 부모에게 크기 값이 있는지 확인 하기*/
+/* 안전 리스트에 li 한테 크기 값 줘서 이미지 그거 반응형 되게 만들자 */
