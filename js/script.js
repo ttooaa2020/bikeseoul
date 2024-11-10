@@ -360,6 +360,16 @@ $(function () {
         autoplay: {
             delay: 0,
         },
+
+        breakpoints: {
+            100: {
+                spaceBetween: 20,
+            },
+
+            901: {
+                spaceBetween: 43,
+            },
+        },
     });
 
     const reviewAll = new Swiper(".review-all-2", {
@@ -372,6 +382,16 @@ $(function () {
         autoplay: {
             delay: 0,
             reverseDirection: true, // 슬라이드 방향을 왼쪽으로 설정
+        },
+
+        breakpoints: {
+            100: {
+                spaceBetween: 20,
+            },
+
+            901: {
+                spaceBetween: 43,
+            },
         },
     });
     // 이용하기end
@@ -432,6 +452,16 @@ $(function () {
             }
         });
     }
+
+    const $controller = $(".controller");
+    const $Cmore = $(".c-more-btn");
+
+    $Cmore.on("click", function () {
+        // 선택한 항목의 on 클래스 토글 및 답변 토글
+        $controller.toggleClass("on");
+
+        $Cmore.toggleClass("on");
+    });
 
     // 맵 end
 
