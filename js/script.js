@@ -453,7 +453,8 @@ $(function () {
         });
     }
 
-    const $controller = $(".all");
+    const $controller = $(".controller");
+
     const $Cmore = $(".c-more-btn");
 
     $Cmore.on("click", function () {
