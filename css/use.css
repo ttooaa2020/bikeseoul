@@ -339,6 +339,14 @@
         padding: 3rem;
     }
 
+    .list-text dt {
+        font-size: 1.5rem;
+    }
+
+    .list-text dd {
+        font-size: 1.2rem;
+    }
+
     .review-item {
         height: 10rem;
         border-radius: 2rem;
