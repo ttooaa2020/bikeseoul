@@ -306,15 +306,15 @@
     }
 
     .accident-con {
+        width: 100%;
         display: flex;
         flex-direction: column;
-
         gap: 6rem;
     }
 
     .accident-title1 {
-        text-align: center;
         width: 100%;
+        text-align: center;
     }
 
     .accident-title h3 {
@@ -326,11 +326,17 @@
     }
 
     .accident-list li {
-        height: 22rem;
+        flex-direction: column;
+    }
+
+    .accident-list li figure {
+        width: 100%;
+        height: 11.5rem;
     }
 
     .accident-list li .list-text {
-        padding: 2.3rem;
+        width: 100%;
+        padding: 3rem;
     }
 
     .review-item {
@@ -353,9 +359,10 @@
     }
 }
 
-@media (max-width: 450px) {
-    .accident-list li:nth-child(5) {
-        height: 30rem;
+@media (max-width: 460px) {
+    .safety-list {
+        margin-top: 2rem;
+        padding: 3rem;
     }
 }
 

@@ -241,14 +241,12 @@ header.hide {
 }
 
 .more-btn a {
+    display: none;
     width: 3.2rem;
     height: 0.7rem;
-    padding-left: 7.1rem;
-
     background: url(../img/more-icon.svg) no-repeat 50% / contain;
-
-    display: none;
 }
+
 /* header end */
 
 /* footer */
@@ -479,6 +477,10 @@ address {
 
     .more-btn a {
         display: block;
+    }
+
+    .join-btn {
+        padding-right: 2rem;
     }
 }
 

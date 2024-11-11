@@ -452,18 +452,6 @@ $(function () {
             }
         });
     }
-
-    const $controller = $(".controller");
-
-    const $Cmore = $(".c-more-btn");
-
-    $Cmore.on("click", function () {
-        // 선택한 항목의 on 클래스 토글 및 답변 토글
-        $controller.toggleClass("on");
-
-        $Cmore.toggleClass("on");
-    });
-
     // 맵 end
 
     // 이벤트
