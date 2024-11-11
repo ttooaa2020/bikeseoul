@@ -73,9 +73,9 @@
     background: var(--main-color3);
     transform: rotate(-90deg);
     border-radius: 2rem;
-    /* position: absolute; */
-    /* bottom: 10rem; */
-    /* left: 45%; */
+    position: absolute;
+    bottom: 10rem;
+    left: 45%;
     cursor: pointer;
     display: none;
 }

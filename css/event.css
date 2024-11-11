@@ -15,14 +15,10 @@
 .event-list > li {
     text-align: center;
     width: 43.2rem;
-    width: 43.2rem;
-
-    width: 28.4211%;
+    height: 41.7rem;
 }
 
-.event-list li figure {
-    height: 41.7rem;
-    height: 31.8rem;
+.event-list > li figure {
     border-radius: 2.4rem;
     overflow: hidden;
     transition: 0.4s;
