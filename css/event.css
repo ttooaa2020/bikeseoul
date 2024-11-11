@@ -12,12 +12,16 @@
     gap: 11.1rem 0;
 }
 
-.event-list li {
+.event-list > li {
+    text-align: center;
+    width: 43.2rem;
     height: 41.7rem;
+
+    width: 28.4211%;
 }
 
 .event-list li figure {
-    width: 43.2rem;
+    width: 100%;
     height: 31.8rem;
     border-radius: 2.4rem;
     overflow: hidden;
@@ -26,10 +30,7 @@
 
 .event-list li img {
     width: 100%;
-}
-
-.event-list li {
-    text-align: center;
+    height: 100%;
 }
 
 .event-text {
@@ -86,6 +87,7 @@
 
 .event-list li:hover .sns-con {
     display: flex;
+
     justify-content: center;
     gap: 3.2rem;
 }
