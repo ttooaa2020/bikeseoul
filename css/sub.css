@@ -514,6 +514,10 @@
         border-radius: 2.4rem;
     }
 
+    .time-list li::after {
+        bottom: 3%;
+    }
+
     .lend-tab li {
         height: 40.4rem;
         padding-top: 10rem;
@@ -525,7 +529,7 @@
     }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 970px) {
     .type {
         padding-top: 10.6rem;
     }
@@ -558,6 +562,10 @@
         padding: 1.8rem 2.2rem;
         width: calc(50% - 1rem); /* 2개씩 줄바꿈을 위해 너비 조정 및 간격 고려 */
         margin-bottom: 1rem; /* 아래쪽 간격 추가 */
+    }
+
+    .time-list li::after {
+        bottom: 15%;
     }
 
     .lend {
