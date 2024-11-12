@@ -146,7 +146,7 @@
     color: var(--Darck-60);
 
     padding-top: 2.9542%;
-    font-size: clamp(1.3rem, 1.25vw, 2.4rem);
+    font-size: clamp(1.5rem, 1.25vw, 2.4rem);
 }
 
 .about-con figure {

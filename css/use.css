@@ -153,7 +153,7 @@
     font-weight: 800;
     font-size: 2.8rem;
 
-    font-size: clamp(1.2rem, 1.4583vw, 2.8rem);
+    font-size: clamp(1.7rem, 1.4583vw, 2.8rem);
 }
 
 .list-text dd {
@@ -162,7 +162,7 @@
     padding-top: 2rem;
 
     padding-top: 3.7383%;
-    font-size: clamp(0.9rem, 1.14583vw, 2.2rem);
+    font-size: clamp(1.5rem, 1.14583vw, 2.2rem);
 }
 /* accident end */
 
@@ -337,14 +337,6 @@
     .accident-list li .list-text {
         width: 100%;
         padding: 3rem;
-    }
-
-    .list-text dt {
-        font-size: 1.5rem;
-    }
-
-    .list-text dd {
-        font-size: 1.2rem;
     }
 
     .review-item {
