@@ -71,9 +71,13 @@ $(function () {
                 delay: 3000,
                 disableOnInteraction: false,
             },
+
+            loop: true,
             speed: 300,
             effect: "fade",
-            allowTouchMove: false,
+            allowTouchMove: true, //드래그 하듯 넘길수 있도록
+            grabCursor: true, //마우서 커서 변경 되도록
+
             // Pagination 추가
             pagination: {
                 el: ".phone-pagination",
